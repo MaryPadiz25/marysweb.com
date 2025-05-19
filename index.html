@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+     
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16887036579"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16887036579');
+</script>
+        <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content=IE-edge>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta property="og:locale" content="en_US">
+         <meta property="og:type" content="website">
+        <meta property="fb:app_id" content="">
+           <link rel="stylesheet" href="body.css">
+          <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Mary's Web</title>    
+</head>
+
+<header>
+         <img src="logo.jpg" class="logo" alt="" title="">
+     <a class="site-title">Mary's Web</a>
+   
+    <div class="wrappers">
+        <div>
+            <input type="checkbox" id="toggle">
+        <label for="toggle" class="checkbtn">&#9776;</label>
+        <nav class="firstnav">
+            <ul>
+                
+                <li> <a href="https://index.html" title="">Home</a></li>
+                <li> <a href="#about" title="">About</a></li>
+                <li> <a href="#contact" title="">Contact</a></li>
+                <li> <a href="#skills" title="">Skills</a></li>
+                <li> <a href="#projects" title="">Projects</a></li>
+            
+                  </ul>
+                </nav>           
+            </div></div>
+</header>
+<body>
+   <section class="profile">
+  <img src="me.jpg" alt="Webdeveloper Webdesigner WebCreator" class="me">
+  <div class="myintro">
+    <h1>Mabuhay!</h1>  
+    <h2>I'm <strong>Mary</strong>, </h2>
+        <h2>a Freelance Web 
+            <span class="typing" id="text">
+            </span>
+
+    <script>
+        const textElement = document.getElementById("text");
+const words = ["Developer", "Designer"];
+let wordIndex = 0;
+let letterIndex = 0;
+let isDeleting = false;
+
+function typeEffect() {
+    const currentWord = words[wordIndex];
+    if (isDeleting) {
+        textElement.textContent = currentWord.substring(0, letterIndex - 1);
+        letterIndex--;
+    } else {
+        textElement.textContent = currentWord.substring(0, letterIndex + 1);
+        letterIndex++;
+    }
+
+    if (!isDeleting && letterIndex === currentWord.length) {
+        setTimeout(() => isDeleting = true, 1000); // Pause before deleting
+    } else if (isDeleting && letterIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length; // Switch word
+    }
+
+    setTimeout(typeEffect, isDeleting ? 80 : 150);
+}
+
+typeEffect();
+    </script>
+<br><br>
+            <a class="social-media" href="https://www.facebook.com/mary.delacerna25/?viewas=100000686899395"><i class='bx bxl-facebook-circle'></i></a>
+            <a class="social-media" href="https://www.instagram.com/mjpadiz/"><i class='bx bxl-instagram-alt' ></i></a>
+            <a class="social-media" href="https://www.youtube.com/channel/UC7pWa7cCRVj5Mzm4NZ_v8wQ"><i class='bx bxl-youtube'></i></a>
+  <br>
+  <br>
+          </div>
+</section>
+      <img src="skillsbackground.jpg" class="container">
+
+<section id="skills" class="capabilities">
+    <h1>Capabilities</h1>
+ <h2>Combining technical proficiency in web development with a keen eye for design, I create user-friendly, visually compelling, and highly functional websites that not only elevate brands but also provide seamless digital experiences tailored to businesses of all sizes.</h2>     
+
+ <ul  class="frontend">
+            <h1>Bringing Ideas to Life</h1>
+            <br><br>
+            <li>-Strong foundation in HTML, CSS, and JavaScript for creating dynamic and visually appealing websites.</li>
+       <br> <br><li>-Skilled in crafting responsive designs that work across different devices and screen sizes.</li>
+        <br><br><li>-Ability to use animations and effects to enhance user engagement</li>
+</ul> 
+<ul  class="wordpress">
+            <h1>Custom & Scalable Websites</h1>
+            <br><br>
+            <li>-Experience in WordPress theme customization to create unique brand identities.</li>
+       <br> <br><li>-Familiar with plugin integration to add essential functionalities.</li>
+        <br><br><li>-Building user-friendly business websites for various industries.</li>
+</ul>  
+<ul  class="webdesign">
+            <h1>Making Interfaces Shine</h1>
+            <br><br>
+            <li>-Passion for designing clean and intuitive user experiences.</li>
+       <br> <br><li>-Expertise in color schemes, typography, and layout design for aesthetic appeal.</li>
+        <br><br><li>-Strong focus on accessibility and ensuring websites are easy to navigate.</li>
+</ul>  
+
+
+</section>
+<section id="contact" class="contact">
+
+      <div class="background">
+         
+              <div class="booking-form">
+                  <form action="https://api.web3forms.com/submit" method="POST">
+                      <input type="hidden" name="access_key" value="31719e02-64d3-4156-af9f-463e05262759">
+                        <h1>Get in Touch</h1>
+                      <label for="name">Name:</label>
+                      <input type="text" name="name" id="name" required>
+      
+                      <label for="Email">Email:</label>
+                      <input type="text" name="Email" id="Email" required>
+      
+                      <label for="number">Contact No.:</label>
+                      <input type="number" name="number" id="number">
+                      
+      
+                      <button type="submit">SUBMIT</button>
+                    </form>
+              </div>
+              </div>
+                <a href="whatsapp.jpg" class="whatsapp"></a>
+                <a href="https://www.facebook.com/messages/t/100003308830844/" class="messenger"></a>
+          
+</section>
+<section id="about" class="about">
+      <div class="containers">
+            <img src="me2.jpg" alt="Webdeveloper Webdesigner WebCreator" class="wholebody">
+         
+            <h1>About Me</h1>
+            <p>I am a passionate and dedicated web developer and designer with a keen ability to create engaging and user-friendly websites. With a solid foundation in HTML, CSS, and JavaScript, I specialize in bringing designs to life and ensuring a seamless user experience.</p>
+       <br>
+            <h3>Education & Awards</h3>
+            <p>My journey as a web developer and designer began in Senior High School, where I majored in Computer Programming. My dedication to the field was recognized when I received the <strong>Outstanding Student in Computer Programming award</strong>, and I graduated <strong>with honors</strong>.</p>
+       <br>
+            <h3>Professional Experience</h3>
+            <p>My professional experience includes working as a Personal Secretary in a pharmacy, where I honed my organizational and administrative skills. Recently, got employed as a Customer Care Representative, which has provided me with the opportunity to expand my technical expertise into the realm of web development while making website on the side.</p>
+        <br>
+            <h3 id="projects">Projects & Services</h3>
+            <p>My first foray into this industry was the creation of the Philippine Tourism Guide website, a project that allowed me to apply my programming knowledge in a practical setting. Building on this experience, I have begun offering services in creating online invitations for various occasions through custom websites as well as creating a booking services website for Malapascua Diving Adventures.</p>
+
+       <img class="web"onclick="window.location.href='https://www.philippine-tourism-guide.com';" style="cursor: pointer;" src="philippine-tourism-guide.png" alt="">
+        <img class="web" onclick="window.location.href='https://www.malapascuadivingadventures.com';" style="cursor:pointer;" src="malapascuadivingadventures.png" alt="">
+</div>
+</section>
+    <script src="script.js"></script>
+</body>
+</html>

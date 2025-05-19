@@ -1,0 +1,1441 @@
+*{
+    text-decoration: none; 
+    font-family: monospace;
+    list-style: none;
+    max-width:100%;
+    margin: 0;
+    padding: 0;
+    }
+    html{
+        max-width:100vw;
+        overflow-x: hidden;
+        height: fit-content;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+            body{   background-image: linear-gradient(to left bottom, lightblue, rgb(49, 162, 255), navy);
+                position: flex;
+                margin: 0;
+                padding: 0;
+                max-width: 100%;
+                height:auto;
+                box-sizing: border-box;
+                overflow-x: hidden;
+                   }
+     
+   
+@media (min-width:800px){
+     header{box-shadow: 2px 5px 5px #000dff;
+    position: relative;
+    width: 100%;
+    padding: 0.5% 0.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    background-color: whitesmoke;
+   }
+.logo{box-shadow: 3px 3px 3px #022467;
+    width: 5%;
+    border-radius: 50%;
+    cursor: default;
+    position: relative;
+    margin-left: 10%;
+}
+ .site-title {
+            margin: 0 3%;
+            position: relative;
+            width:40%;
+            font-size: 3vw;
+            color:rgb(1, 56, 207);
+            text-shadow: 2px 3px 5px #49ffce;
+            font-family: Cooper;
+            cursor:pointer;
+
+            }
+ .wrappers{
+            position: relative;
+            display:inline;
+            width:68%;
+            float: right;
+            margin-right: 1%;
+            margin-top: 2%;
+            margin-left: 15%;
+            }
+       .wrappers  nav{
+        font-family: 'Roboto', sans-serif;   
+        width:100%;
+        margin-top: 0;
+            }
+        .wrappers nav ul{    
+            list-style-type: none;
+            display: flex;
+            padding: .5% .5%;
+            }
+        .wrappers nav ul li{
+            justify-self: center;
+             padding: 1% 1%;
+             position: relative;
+             cursor: pointer;
+             transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+              }
+       .wrappers nav ul li a{
+        
+            display: inline-flex;
+            width: 100%;
+            font-size: 1vw; 
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: cooper;
+            color:#0327a8;
+            }
+        .wrappers nav ul li:hover{
+            opacity: #fff;
+            }
+        .wrappers nav ul li a:hover{
+           color:#fff;
+           text-shadow: 1px 1px 5px black;
+            }
+       .wrappers nav ul li:hover > ul{
+           display: block;
+            }     
+       #toggle{
+           display: none;
+            }
+       .wrappers .checkbtn{
+           display: none;
+            }
+       .profile{
+     position: relative;
+    width: 100%;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5%;
+ 
+}
+.me{ display: inline-flex;
+    position: relative;
+    float: left;
+    max-width:30%;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 15%;
+    animation: zoomIn 1s ease forwards;
+    animation-delay:1s;
+    margin-bottom: 5%;
+    box-shadow: 0 0 30px rgb(0, 13, 255); 
+
+}
+
+.myintro{
+    display: inline-block;
+    position: relative;
+    width: 35%;
+ margin-top: 10%;
+    margin-right:5%;
+     
+}
+.profile h1{
+    animation: slideRight 1s ease forwards;
+    animation-delay:1s;
+    font-size: 3vw;
+    white-space: nowrap;
+  
+}
+       
+.profile h2{ width:100%;
+    font-size: 2vw;
+    word-spacing: -3px;
+}
+.profile h2 strong{
+    font-size: 4vw;
+    letter-spacing:3px;
+     color: orangered;
+         text-shadow: 2px 2px 3px #0f0745;
+    font-family: 'Courier New', Courier, monospace;
+}
+.typing {
+        letter-spacing:3px;
+    font-family: cooper black;
+    font-size: 2vw;
+    border-right:none; 
+    color: orangered;
+    text-shadow: 2px 2px 3px #0f0745;
+    font-weight: bold;
+    overflow: hidden;
+    width: fit-content;
+}
+
+@keyframes slideRight{
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes zoomIn{
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }}
+.social-media{
+    z-index: 2;
+    margin-top: 5%;
+    border-radius: 55%;
+    text-shadow: 2px 2px 2px #fff;
+font-size: 2.5vw;
+  background-image: linear-gradient(to left bottom, lightblue, rgb(246, 178, 53), rgb(223, 93, 46));
+ padding: 1% 1.5%;  
+ box-shadow: 0 0 5px rgb(0, 4, 72); 
+
+}
+.social-media:hover{
+    color:rgb(255, 68, 0);
+}
+
+.container{
+    z-index: 0;
+    margin:0 ;
+    width:100%;
+   height: auto;
+display: flex;
+position: absolute;
+    box-shadow: 2px 5px 5px#1c2138d6;
+}
+.capabilities{
+    position:relative;
+    display: flex;
+    width: 100%;
+}
+.capabilities h1{
+    margin-top: 2%;
+       display: inline-block;
+    z-index: 2;
+        position: absolute;
+    font-size: 5vw;
+    color:rgb(246, 123, 0);
+    text-shadow: 2px 5px 5px #000;
+    font-family:cooper;
+   width: 100%;
+   text-align: center;
+
+}
+.capabilities h2{
+    margin-top: 10%;
+    z-index: 2;
+        position: absolute;
+    font-size: 1.5vw;
+    color:rgb(22, 22, 22);
+    font-family:playfair display;
+    text-align: justify;
+ width: 50%;
+ height: fit-content;
+ padding: 1% 1%;
+ margin-left: 24%;
+ margin-right: 24%;
+      background-color: rgb(248, 248, 248);
+
+}
+
+.frontend{
+    margin-top: 20%;
+    margin-left: 5%;
+    float: left;
+      background-color: rgb(248, 248, 248);
+    position:absolute;
+    width: 25%;
+    display: inline;
+    padding: 1% 1%;
+    
+}
+.frontend h1{
+    text-shadow: none;
+    display: inline-block;
+    z-index: 2;
+        position: relative;
+    font-size: 2vw;
+    color:rgb(15, 13, 13);
+    font-family: Arial;
+
+}
+.frontend li{
+    word-spacing: 3px;
+    font-family: sans-serif;
+    display: inline-block;
+    z-index: 2;
+        position: relative;
+    font-size: 1.3vw;
+}
+
+.wordpress{
+    margin-top: 25%;
+    margin-left: 35%;
+
+      background-color: rgb(248, 248, 248);
+    position: absolute;
+    width: 25%;
+    display: block;
+    padding: 1% 1%;
+    
+}
+.wordpress h1{
+    text-shadow: none;
+    display: inline-block;
+    z-index: 2;
+        position: relative;
+    font-size: 2vw;
+    color:rgb(15, 13, 13);
+    font-family: Arial;
+
+}
+.wordpress li{
+    word-spacing: 3px;
+    font-family: sans-serif;
+    display: inline-block;
+    z-index: 2;
+        position: relative;
+    font-size: 1.3vw;
+}
+.webdesign{
+    margin-top: 30%;
+    margin-left: 65%;
+      background-color: rgb(248, 248, 248);
+    position:relative;
+    width: 25%;
+    display: block;
+    padding: 1% 1%;
+    
+}
+.webdesign h1{
+    text-shadow: none;
+    display: inline-block;
+    z-index: 2;
+        position: relative;
+    font-size: 2vw;
+    color:rgb(15, 13, 13);
+    font-family: Arial;
+
+}
+.webdesign li{
+    word-spacing: 3px;
+    font-family: sans-serif;
+    display: inline-block;
+    z-index: 2;
+        position: relative;
+    font-size: 1.3vw;
+}
+
+.contact{
+        margin-top: 15%;
+     position: relative;
+     display: inline-block;
+    width: 100%;
+    justify-content: space-between;
+margin-bottom: 10%;
+      box-shadow: 2px 5px 5px#1c2138d6;
+}
+
+   .background{
+    margin-left: 10%;
+    float: left;
+position: relative;
+    display: inline-flex;
+    width:40%;
+    height: fit-content;
+    margin-bottom: 5%;
+}
+.contact h1{ 
+      text-shadow: none;
+    display: inline-block;
+    z-index: 2;
+    position: relative;
+    font-size: 4vw;
+    color:rgb(255, 253, 253);
+    font-family: Arial;
+    width: 100%;
+}
+      .booking-form{   
+        margin-top: 1%;
+        margin-right: 5%;
+        float: left;
+        padding: 0;
+          position: flex;
+    width:fit-content;
+    margin-left: 20%;
+   height: auto;
+   margin-bottom: 0;
+      }
+     
+      .booking-form form{
+          display:flex;
+          flex-direction: column;
+      }
+      .booking-form input{
+        width: 100%;
+          padding: 1vw;
+          font-size: 1.5vw;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+      }
+      .booking-form button{
+        width:50%;
+          margin-top: 10px;
+          padding: 10px;
+          color: rgb(16, 15, 15);
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 1vw;
+          font-family: cooper;
+          margin-bottom: 1%;
+           background:rgb(25, 251, 0);
+        box-shadow: 0px 0px 10px#ff9334;
+      }
+      .booking-form button:hover{
+opacity: .5;
+      }
+    
+.booking-form label{
+    padding-top: 1%;
+    font-size: 1.5vw;
+    color: white;
+
+}
+.whatsapp{   
+margin-top: 5%;
+  padding: 8%;
+  position: relative;
+  display: inline-flex;
+  background: url(whatsapp1.jpg) no-repeat;
+  background-position: contain;
+  background-position-x: center;
+  background-position-y: center;
+
+}
+.messenger{   
+  padding: 8%;
+  position: relative;
+  display: inline-flex;
+  background: url(messenger.jpg) no-repeat;
+  background-position: contain;
+  background-position-x: center;
+  background-position-y: center;
+}
+    .about{
+    position: relative;
+    width: 100%;
+    display:
+    justify-content: space-between;
+
+      box-shadow: 2px 5px 5px#1c2138d6;
+  }
+.wholebody{
+    margin-left: 2%;
+    float: right;
+    width:35%;
+ display: inline-block;
+position: relative;
+box-shadow: 0px 0px 25px #191717;
+   
+}
+.containers{margin-bottom: 5%;
+    display: inline-block;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: fit-content;
+    text-align: justify;
+}
+h1{ font-size: 3vw;
+            color: #f8efef;
+            text-shadow: 2px 5px 5px #191717;
+        }
+ p{ font-size: 1.4vw;
+    background-color: #f5efef81;
+        padding: 1% 1%;
+        font-family: monospace;
+        letter-spacing: -.8px;
+        word-spacing: -1.2px;
+        }
+        h3 {font-size: 2vw;
+           color: #f8efef;
+            text-shadow: 2px 5px 5px #191717;
+        }
+    } 
+
+
+@media (min-width:550px) and (max-width: 799.99px){
+      header{box-shadow: 2px 5px 5px #000dff;
+    position: relative;
+    width: 100%;
+    padding: 1em 0.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    background-color: whitesmoke;
+   }
+    .logo{box-shadow: 3px 3px 3px #022467;
+    width: 5em;
+    border-radius: 50%;
+    cursor: default;
+    position: relative;
+    margin-left: 10%;
+}
+ .site-title {
+            margin:0;
+            margin-left: 2%;
+            position: relative;
+            width:78%;
+            font-size: 2em;
+            color:rgb(1, 56, 207);
+            text-shadow: 2px 3px 5px #49ffce;
+            font-family: Cooper;
+            cursor:pointer;
+            } 
+            .wrappers{ 
+               
+                z-index: 8;
+                position:absolute;
+                width:100%;
+                margin-top: 0;
+                margin-left: 0;
+                }
+            .wrappers div{
+                display: block;
+                position: relative;
+                }
+            .checkbtn{
+                 float: right;
+                margin-right: 10%;
+                font-size: 3.5em;
+                height: fit-content;
+                line-height: 3px;
+                text-align: center;
+                cursor:pointer;
+                transition: .5s ease;
+                }
+            .checkbtn:hover{
+                opacity: 0.5;
+            }
+            .wrappers input{
+                display: none;
+            }
+            .wrappers div label:hover{
+                background-color: none;
+            }
+            .wrappers  .firstnav{
+                 display: none;
+                position:relative;
+                z-index: 10;
+                margin-left: -1%;
+                height: auto;
+                transition: .5s ease;
+                overflow: hidden;
+                align-content: center;
+                font-family: 'Roboto', sans-serif;
+                }
+            input[type=checkbox]:checked~.firstnav{
+                width: 100%;
+                display: block;
+                }
+                input[type=checkbox]:checked~.checkbtn{
+            margin-top: 40%;
+                }
+            .wrappers nav ul{   
+                margin-top: 2%;
+                  background-color:rgba(201, 202, 202, 0.851);
+                padding: 2%;
+                display: block;
+                }
+            .wrappers nav ul li{
+                padding: 1% 1%;
+                height: auto;
+                }
+            .wrappers nav ul li a{
+                display: flex;
+                padding: 1% 1%;
+                border: none;
+                background: none;
+                font-size: 2.5vw;
+                text-decoration: none;
+                text-transform: uppercase;
+                height: 100%;
+                width:fit-content;
+                margin: 0;
+                margin-left: 1%;
+                font-weight: bold;
+                cursor: pointer;
+                text-transform: uppercase;
+                font-weight: bolder;
+                font-family: sans-serif;
+                color: #0E6600;
+               
+                }
+            .wrappers nav ul li:hover{
+                opacity: #fff;
+                }
+            .wrappers nav ul li a:hover{
+               color:#fff;
+               text-shadow: 1px 1px 5px black;
+                }
+           .wrappers nav ul li:hover > ul{
+               display: block;
+                }     
+       .profile{
+     position: relative;
+    width: 100%;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5%;
+ 
+}
+.me{ display: inline-flex;
+    position: relative;
+    float: left;
+    max-width:40%;
+    margin-top: 5%;
+    margin-right: 2%;
+    margin-left: 2%;
+    animation: zoomIn 1s ease forwards;
+    animation-delay:1s;
+    margin-bottom: 5%;
+    box-shadow: 0 0 30px rgb(0, 13, 255); 
+
+}
+
+.myintro{
+    max-width: 55%;
+    display: inline-block;
+    position: relative;
+    width: fit-content;
+ margin-top: 10%;
+    margin-right:2%;
+     
+}
+.profile h1{
+    animation: slideRight 1s ease forwards;
+    animation-delay:1s;
+    font-size: 2.5em;
+    white-space: nowrap;
+  
+}
+       
+.profile h2{ width:100%;
+    font-size: 1.5em;
+    word-spacing: -3px;
+}
+.profile h2 strong{
+    font-size: 1.5em;
+    letter-spacing:3px;
+     color: orangered;
+         text-shadow: 2px 2px 3px #0f0745;
+    font-family: 'Courier New', Courier, monospace;
+}
+.typing {
+        letter-spacing:3px;
+    font-family: cooper black;
+    font-size: .8em;
+    border-right:none; 
+    color: orangered;
+    text-shadow: 2px 2px 3px #0f0745;
+    font-weight: bold;
+    overflow: hidden;
+    width: fit-content;
+}
+
+@keyframes slideRight{
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes zoomIn{
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }}
+.social-media{
+    z-index: 2;
+    border-radius: 55%;
+    text-shadow: 2px 2px 2px #fff;
+font-size: 1.5em;
+  background-image: linear-gradient(to left bottom, lightblue, rgb(246, 178, 53), rgb(223, 93, 46));
+ padding: 0 1%;
+ padding-top:3%;
+ box-shadow: 0 0 5px rgb(0, 4, 72); 
+}
+.social-media:hover{
+    color:rgb(255, 68, 0);
+}
+
+.container{
+    display: none;
+    z-index: 0;
+    margin:0 ;
+    width:100%;
+   height: auto;
+position: relative;
+    box-shadow: 2px 5px 5px#1c2138d6;
+}
+.capabilities{
+    background: url('skillsbackground.jpg');
+    background-size: cover;
+    position:relative;
+    display: block;
+    height: fit-content;
+    width: 100%;
+}
+.capabilities h1{
+    margin-top: 2%;
+       display: inline-block;
+    z-index: 2;
+        position: relative;
+    font-size: 2em;
+    color:rgb(246, 123, 0);
+    text-shadow: 2px 5px 5px #000;
+    font-family:cooper;
+   width: 100%;
+   text-align: center;
+
+}
+.capabilities h2{
+    margin-top: 1%;
+    z-index: 2;
+        position: relative;
+    font-size: 1.2em;
+    color:rgb(22, 22, 22);
+    font-family:playfair display;
+    text-align: justify;
+ width: 80%;
+ height: fit-content;
+ padding: 1% 1%;
+ margin-left: 9%;
+ margin-right: 9%;
+      background-color: rgb(248, 248, 248);
+
+}
+
+.frontend{
+    margin-top: 2%;
+    margin-left: 9%;
+    margin-right: 9%;
+      background-color: rgba(248, 248, 248, 0.838);
+    position:relative;
+    width:80%;
+    display: inline-block;
+    padding: 1% 1%;
+
+}
+.frontend h1{
+    text-shadow: none;
+    display: inline-block;
+    z-index: 2;
+        position: relative;
+    font-size: 1.3em;
+    color:rgb(15, 13, 13);
+    font-family: Arial;
+
+}
+.frontend li{
+    word-spacing: 3px;
+    font-family: sans-serif;
+    display: inline-block;
+    z-index: 2;
+        position: relative;
+    font-size: 1.1em;
+}
+
+.wordpress{
+    margin-top: 2%;
+    margin-left: 9%;
+    margin-right: 9%;
+      background-color: rgba(248, 248, 248, 0.838);
+    position:relative;
+    width:80%;
+    display: inline-block;
+    padding: 1% 1%;
+    
+}
+.wordpress h1{
+    text-shadow: none;
+    display: inline-block;
+    z-index: 2;
+        position: relative;
+    font-size: 1.3em;
+    color:rgb(15, 13, 13);
+    font-family: Arial;
+
+}
+.wordpress li{
+    word-spacing: 3px;
+    font-family: sans-serif;
+    display: inline-block;
+    z-index: 2;
+        position: relative;
+    font-size: 1.1em;
+}
+.webdesign{
+    margin-top: 2%;
+    margin-left: 9%;
+    margin-right: 9%;
+      background-color: rgba(248, 248, 248, 0.838);
+    position:relative;
+    width:80%;
+    display: inline-block;
+    padding: 1% 1%;
+    margin-bottom: 2%;
+    
+}
+.webdesign h1{
+    text-shadow: none;
+    display: inline-block;
+    z-index: 2;
+        position: relative;
+    font-size: 1.3em;
+    color:rgb(15, 13, 13);
+    font-family: Arial;
+
+}
+.webdesign li{
+    word-spacing: 3px;
+    font-family: sans-serif;
+    display: inline-block;
+    z-index: 2;
+        position: relative;
+    font-size: 1.1em;
+}
+
+.contact{
+     position: relative;
+    width: 100%;
+    display: inline-block;
+    justify-content: space-between;
+margin-bottom: 10%;
+      box-shadow: 2px 5px 5px#1c2138d6;
+}
+.contact h1{
+    margin-top: 5%;
+    text-align: center;
+    width: 100%;
+      text-shadow: none;
+    display: inline-block;
+    z-index: 2;
+    position: relative;
+    font-size: 4vw;
+    color:rgb(255, 253, 253);
+    font-family: Arial;
+}
+   .background{
+    display: inline-block;
+    width:60%;
+    margin-left: 19%;
+    margin-right: 19%;
+    margin-bottom: 5%;
+}
+      .booking-form{   
+        margin-top: 1%;
+        padding: 0;
+        display: inline-block;
+          position: relative;
+    width:fit-content;
+    width: 100%;
+   height: auto;
+   margin-bottom: 0;
+      }
+     
+      .booking-form form{
+          flex-direction: column;
+      }
+      .booking-form input{
+        width: 100%;
+          padding: 2vw;
+          font-size:1.3em;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+      }
+      .booking-form button{
+        width:50%;
+          margin-top: 10px;
+          padding: 10px;
+          color: rgb(16, 15, 15);
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 1em ;
+          font-family: cooper;
+          margin-bottom: 1%;
+           background:rgb(25, 251, 0);
+        box-shadow: 0px 0px 10px#ff9334;
+      }
+      .booking-form button:hover{
+opacity: .5;
+      }
+    
+.booking-form label{
+    padding-top: 1%;
+    font-size: 1.5em;
+    color: white;
+
+}
+.whatsapp{   
+     position: relative;
+  display: block;
+  padding: 20%;
+    margin: 0;
+    float: left;
+  width:20%;
+  background: url(whatsapp1.jpg) no-repeat;
+  background-position: contain;
+  background-position-x: center;
+  background-position-y: center;
+
+}
+.messenger{  
+  margin-left: 40%;
+  width:20%;
+  position: relative;
+  display: block;
+  padding: 20%;
+  background: url(messenger.jpg) no-repeat;
+  background-position: contain;
+  background-position-x: center;
+  background-position-y: center;
+  margin-bottom: 2%;
+}
+    .about{
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    justify-content: space-between;
+
+      box-shadow: 2px 5px 5px#1c2138d6;
+  }
+.wholebody{
+    margin-left: 2%;
+    float: right;
+    width:35%;
+ display: inline-block;
+position: relative;
+box-shadow: 0px 0px 25px #191717;
+   
+}
+.containers{margin-bottom: 5%;
+    display: inline-block;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: fit-content;
+    text-align: justify;
+}
+h1{ font-size: 2.8em;
+            color: #f8efef;
+            text-shadow: 2px 5px 5px #191717;
+        }
+ p{ font-size: 1.4em;
+    background-color: #f5efef81;
+        padding: 1% 1%;
+        font-family: monospace;
+        word-spacing: -1.5px;
+        }
+        h3 {font-size: 2em;
+           color: #f8efef;
+            text-shadow: 2px 5px 5px #191717;
+        }
+}
+
+@media (max-width: 550.99px){
+      header{box-shadow: 2px 5px 5px #000dff;
+    position: relative;
+    width: 100%;
+    padding: 1em 0.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    background-color: whitesmoke;
+   }
+    .logo{box-shadow: 3px 3px 3px #022467;
+    width: 5em;
+    border-radius: 50%;
+    cursor: default;
+    position: relative;
+    margin-left: 1%;
+}
+ .site-title {
+            margin:0;
+            margin-left: 2%;
+            position: relative;
+            width:78%;
+            font-size: 1.5em;
+            color:rgb(1, 56, 207);
+            text-shadow: 2px 3px 5px #49ffce;
+            font-family: Cooper;
+            cursor:pointer;
+            } 
+            .wrappers{ 
+               
+                z-index: 8;
+                position:absolute;
+                width:100%;
+                margin-top: 0;
+                margin-left: 0;
+                }
+            .wrappers div{
+                display: block;
+                position: relative;
+                }
+            .checkbtn{
+                 float: right;
+                margin-right: 10%;
+                font-size: 3em;
+                height: fit-content;
+                line-height: 3px;
+                text-align: center;
+                cursor:pointer;
+                transition: .5s ease;
+                }
+            .checkbtn:hover{
+                opacity: 0.5;
+            }
+            .wrappers input{
+                display: none;
+            }
+            .wrappers div label:hover{
+                background-color: none;
+            }
+            .wrappers  .firstnav{
+                 display: none;
+                position:relative;
+                z-index: 10;
+                margin-left: -1%;
+                height: auto;
+                transition: .5s ease;
+                overflow: hidden;
+                align-content: center;
+                font-family: 'Roboto', sans-serif;
+                }
+            input[type=checkbox]:checked~.firstnav{
+                width: 100%;
+                display: block;
+                }
+                input[type=checkbox]:checked~.checkbtn{
+            margin-top: 40%;
+                }
+            .wrappers nav ul{   
+                margin-top: 2%;
+                  background-color:rgba(201, 202, 202, 0.851);
+                padding: 2%;
+                display: block;
+                }
+            .wrappers nav ul li{
+                padding: 1% 1%;
+                height: auto;
+                }
+            .wrappers nav ul li a{
+                display: flex;
+                padding: 1% 1%;
+                border: none;
+                background: none;
+                font-size: 2.5vw;
+                text-decoration: none;
+                text-transform: uppercase;
+                height: 100%;
+                width:fit-content;
+                margin: 0;
+                margin-left: 1%;
+                font-weight: bold;
+                cursor: pointer;
+                text-transform: uppercase;
+                font-weight: bolder;
+                font-family: sans-serif;
+                color: #0E6600;
+               
+                }
+            .wrappers nav ul li:hover{
+                opacity: #fff;
+                }
+            .wrappers nav ul li a:hover{
+               color:#fff;
+               text-shadow: 1px 1px 5px black;
+                }
+           .wrappers nav ul li:hover > ul{
+               display: block;
+                }     
+       .profile{
+     position: relative;
+    width: 100%;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5%;
+ 
+}
+.me{ display: inline-flex;
+    position: relative;
+    float: left;
+    max-width:70%;
+    margin-top: 5%;
+    margin-right: 14%;
+    margin-left: 14%;
+    animation: zoomIn 1s ease forwards;
+    animation-delay:1s;
+    margin-bottom: 5%;
+    box-shadow: 0 0 30px rgb(0, 13, 255); 
+
+}
+
+.myintro{
+    text-align: center;
+    max-width: 70%;
+    display: inline-block;
+    position: relative;
+    width: fit-content;
+ margin-top: 1%;
+    margin-right:14%;
+      margin-left:14%;
+}
+.profile h1{
+   animation: zoomIn 1s ease forwards;
+    animation-delay:1s;
+    font-size: 2.5em;
+    white-space: nowrap;
+  
+}
+       
+.profile h2{ width:100%;
+    font-size: 1.5em;
+    word-spacing: -3px;
+}
+.profile h2 strong{
+    font-size: 1.5em;
+    letter-spacing:3px;
+     color: orangered;
+         text-shadow: 2px 2px 3px #0f0745;
+    font-family: 'Courier New', Courier, monospace;
+}
+.typing {
+        letter-spacing:3px;
+    font-family: cooper black;
+    font-size: .8em;
+    border-right:none; 
+    color: orangered;
+    text-shadow: 2px 2px 3px #0f0745;
+    font-weight: bold;
+    overflow: hidden;
+    width: fit-content;
+}
+
+
+@keyframes zoomIn{
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }}
+.social-media{
+    z-index: 2;
+    border-radius: 55%;
+    text-shadow: 2px 2px 2px #fff;
+font-size: 1.5em;
+  background-image: linear-gradient(to left bottom, lightblue, rgb(246, 178, 53), rgb(223, 93, 46));
+ padding: 0 1%;
+ padding-top:3%;
+ box-shadow: 0 0 5px rgb(0, 4, 72); 
+}
+.social-media:hover{
+    color:rgb(255, 68, 0);
+}
+
+.container{
+    display: none;
+    z-index: 0;
+    margin:0 ;
+    width:100%;
+   height: auto;
+position: relative;
+    box-shadow: 2px 5px 5px#1c2138d6;
+}
+.capabilities{
+    background: url('skillsbackground.jpg');
+    background-size: cover;
+    position:relative;
+    display: block;
+    height: fit-content;
+    width: 100%;
+}
+.capabilities h1{
+    margin-top: 2%;
+       display: inline-block;
+    z-index: 2;
+        position: relative;
+    font-size: 2em;
+    color:rgb(246, 123, 0);
+    text-shadow: 2px 5px 5px #000;
+    font-family:cooper;
+   width: 100%;
+   text-align: center;
+
+}
+.capabilities h2{
+    margin-top: 1%;
+    z-index: 2;
+        position: relative;
+    font-size: 1.2em;
+    color:rgb(22, 22, 22);
+    font-family:playfair display;
+    text-align: justify;
+ width: 80%;
+ height: fit-content;
+ padding: 1% 1%;
+ margin-left: 9%;
+ margin-right: 9%;
+      background-color: rgb(248, 248, 248);
+
+}
+
+.frontend{
+    margin-top: 2%;
+    margin-left: 9%;
+    margin-right: 9%;
+      background-color: rgba(248, 248, 248, 0.838);
+    position:relative;
+    width:80%;
+    display: inline-block;
+    padding: 1% 1%;
+
+}
+.frontend h1{
+    text-shadow: none;
+    display: inline-block;
+    z-index: 2;
+        position: relative;
+    font-size: 1.3em;
+    color:rgb(15, 13, 13);
+    font-family: Arial;
+
+}
+.frontend li{
+    word-spacing: 3px;
+    font-family: sans-serif;
+    display: inline-block;
+    z-index: 2;
+        position: relative;
+    font-size: 1.1em;
+}
+
+.wordpress{
+    margin-top: 2%;
+    margin-left: 9%;
+    margin-right: 9%;
+      background-color: rgba(248, 248, 248, 0.838);
+    position:relative;
+    width:80%;
+    display: inline-block;
+    padding: 1% 1%;
+    
+}
+.wordpress h1{
+    text-shadow: none;
+    display: inline-block;
+    z-index: 2;
+        position: relative;
+    font-size: 1.3em;
+    color:rgb(15, 13, 13);
+    font-family: Arial;
+
+}
+.wordpress li{
+    word-spacing: 3px;
+    font-family: sans-serif;
+    display: inline-block;
+    z-index: 2;
+        position: relative;
+    font-size: 1.1em;
+}
+.webdesign{
+    margin-top: 2%;
+    margin-left: 9%;
+    margin-right: 9%;
+      background-color: rgba(248, 248, 248, 0.838);
+    position:relative;
+    width:80%;
+    display: inline-block;
+    padding: 1% 1%;
+    margin-bottom: 2%;
+    
+}
+.webdesign h1{
+    text-shadow: none;
+    display: inline-block;
+    z-index: 2;
+        position: relative;
+    font-size: 1.3em;
+    color:rgb(15, 13, 13);
+    font-family: Arial;
+
+}
+.webdesign li{
+    word-spacing: 3px;
+    font-family: sans-serif;
+    display: inline-block;
+    z-index: 2;
+        position: relative;
+    font-size: 1.1em;
+}
+
+.contact{
+     position: relative;
+    width: 100%;
+    display: inline-block;
+    justify-content: space-between;
+margin-bottom: 10%;
+      box-shadow: 2px 5px 5px#1c2138d6;
+}
+.contact h1{
+    margin-top: 5%;
+    text-align: center;
+    width: 100%;
+      text-shadow: none;
+    display: inline-block;
+    z-index: 2;
+    position: relative;
+    font-size: 4vw;
+    color:rgb(255, 253, 253);
+    font-family: Arial;
+}
+   .background{
+    display: inline-block;
+    width:60%;
+    margin-left: 19%;
+    margin-right: 19%;
+    margin-bottom: 5%;
+}
+      .booking-form{   
+        margin-top: 1%;
+        padding: 0;
+        display: inline-block;
+          position: relative;
+    width:fit-content;
+    width: 100%;
+   height: auto;
+   margin-bottom: 0;
+      }
+     
+      .booking-form form{
+          flex-direction: column;
+      }
+      .booking-form input{
+        width: 100%;
+          padding: 2vw;
+          font-size:1.3em;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+      }
+      .booking-form button{
+        width:50%;
+          margin-top: 10px;
+          padding: 10px;
+          color: rgb(16, 15, 15);
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 1em ;
+          font-family: cooper;
+          margin-bottom: 1%;
+           background:rgb(25, 251, 0);
+        box-shadow: 0px 0px 10px#ff9334;
+      }
+      .booking-form button:hover{
+opacity: .5;
+      }
+    
+.booking-form label{
+    padding-top: 1%;
+    font-size: 1.5em;
+    color: white;
+
+}
+.whatsapp{   
+     position: relative;
+  display: block;
+  padding: 30%;
+    margin: 0;
+  background: url(whatsapp1.jpg) no-repeat;
+  background-position: contain;
+  background-position-x: center;
+  background-position-y: center;
+
+}
+.messenger{  
+  position: relative;
+  display: block;
+  padding: 30%;
+  background: url(messenger.jpg) no-repeat;
+  background-position: contain;
+  background-position-x: center;
+  background-position-y: center;
+  margin-bottom: 2%;
+}
+    .about{
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    justify-content: space-between;
+
+      box-shadow: 2px 5px 5px#1c2138d6;
+  }
+.wholebody{
+    margin-left: 2%;
+    float: right;
+    width:35%;
+ display: inline-block;
+position: relative;
+box-shadow: 0px 0px 25px #191717;
+   
+}
+.containers{margin-bottom: 5%;
+    display: inline-block;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: fit-content;
+    text-align: justify;
+}
+h1{ font-size: 2.8em;
+            color: #f8efef;
+            text-shadow: 2px 5px 5px #191717;
+        }
+ p{ font-size: 1.4em;
+    background-color: #f5efef81;
+        padding: 1% 1%;
+        font-family: monospace;
+        word-spacing: -1.5px;
+        }
+        h3 {font-size: 2em;
+           color: #f8efef;
+            text-shadow: 2px 5px 5px #191717;
+        }
+}
