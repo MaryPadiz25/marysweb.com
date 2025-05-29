@@ -328,14 +328,12 @@ background: #e95e00;
 
 
 @media (max-width: 549.99px){
-     body {
-        font-size: 90%;
-
-    }
+     
       header{   flex-direction: column;
         text-align: center;
         padding: 5px;
-        margin-top: 5%;
+        margin-top: 10%;
+        margin-bottom: 5%;
    }
 
  .wrappers div{
@@ -343,10 +341,9 @@ background: #e95e00;
   position: relative;
                 }
             .checkbtn{
-
 z-index: 25;
                  float: right;
-                margin-right: 10%;
+                margin-right: 5%;
                 color: white;
                 font-size: 3em;
                 height: fit-content;
@@ -365,7 +362,8 @@ z-index: 25;
                 background-color: none;
             }
             .wrappers  .firstnav{
-                 display: none;
+             margin-top: 10%;
+                display: none;
                 position:absolute;
                 z-index: 10;
                 margin-left: -1%;
@@ -382,9 +380,10 @@ z-index: 25;
                 input[type=checkbox]:checked~.checkbtn{
             margin-top: 0;
                 }
-            .wrappers nav ul{  
-                margin-top: 2%;
-                  background-color:rgba(15, 2, 53, 0.812);
+            .wrappers nav ul{ 
+                  height: 100vh;
+                  width:100%;
+                   background-color:rgba(15, 2, 53, 0.812);
                 padding: 2%;
                 display: block;
                 }
@@ -393,25 +392,18 @@ z-index: 25;
                 height: auto;
                 }
             .wrappers nav ul li a{
+                text-align: center;
                 display: flex;
-                padding: 1% 1%;
+                padding: 1% 2%;
                 border: none;
                 background: none;
-                font-size: 1.4em;
-                text-decoration: none;
-                text-transform: uppercase;
-                height: 100%;
-                width:fit-content;
+                font-size: 1.125em;
+                width:100%;
                 margin: 0;
                 margin-left: 1%;
-                font-weight: bold;
                 cursor: pointer;
-                text-transform: uppercase;
-                font-weight: bolder;
-                font-family: sans-serif;
-                color: #ff5f0f;
-               
-                }
+                font-family:'Roboto';
+                   color: #ff7043;  }
             .wrappers nav ul li:hover{
                 opacity: #fff;
                 }
@@ -421,7 +413,8 @@ z-index: 25;
                 }
            .wrappers nav ul li:hover > ul{
                display: block;
-                }     
+                }    
+              
   .profile{
          flex-direction: column;
         padding: 20px;
@@ -473,7 +466,7 @@ z-index: 25;
 .social-media{
        margin-top: 3%;
     font-size: 1.5rem;
-    padding: 1%;
+    padding: 8px;
     border-radius: 50%;
     background: linear-gradient(to right, #ff7043, #ffa726);
     color: #fff;
@@ -518,7 +511,7 @@ position: relative;
 
 }
 h1{ font-size: 1.5em;
-     color:rgb(255, 68, 0);
+        color: #ff7043;
      font-family: "Poppins", sans-serif;      }
  h3 {
     font-size: 1.4em;
@@ -526,14 +519,12 @@ h1{ font-size: 1.5em;
     font-family: "Poppins", sans-serif;
 }
 
-     p{  font-size: 1em;
+     p{  font-size: 1.125em;
     background-color: rgba(245, 239, 239, 0.9);
     padding: 15px;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto' sans-serif;
     line-height: 1.8;
-    letter-spacing:0;
-    word-spacing:0;
-    word-break: break-all;
+     text-align: left;
     border-radius: 5px;  }
 .sample{
     margin-top: 1%;
@@ -561,24 +552,23 @@ h1{ font-size: 1.5em;
 }
 .capabilities h1{
     font-size: 1.5em;
-    color: rgb(255, 68, 0);
+        color: #ff7043;
     text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4);
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
    
 }
 .capabilities h2{
-   font-size: 1em;
+   font-size: 1.125em;
     background-color: rgba(255, 255, 255, 0.9);
     color: #333;
     padding: 5px;
     border-radius: 8px;
+    text-align: center;
     width: 90%;
     margin: 20px auto;
-      font-family: "Roboto", sans-serif;
-    line-height: 1.8;
-    letter-spacing:0;
-    word-spacing:0;
-    word-break: break-all;}
+      font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+   }
 .sets{
     display: inline-block;
 }
@@ -596,16 +586,17 @@ h1{ font-size: 1.5em;
 .frontend h1, .wordpress h1, .webdesign h1 {
     font-size: 1.4em;
     font-family: "Roboto", sans-serif;
-    color: #333;
+        color: #ff7043;
+        text-shadow: none;
 }
 
 .frontend li, .wordpress li, .webdesign li {
-    font-size: 1em;
+    font-size: 1.125em;
       font-family: "Roboto", sans-serif;
     line-height: 1.5;
-    letter-spacing:0;
-    word-spacing:0;
-    word-break: break-all;    color: #555;
+     color: #555;
+     text-align: left;
+     margin-bottom: 2%;
 }
 
 .contact{
