@@ -302,5 +302,57 @@ document.addEventListener("scroll", function () {
               </div>
               </div>
 </section>
+<section id="why-hire-me" class="hire-me">
+    <div class="container">
+        <h1 class="fade-in">Why Hire Me?</h1>
+        <p class="intro fade-in">🚀 Need a website that stands out, ranks high, and converts visitors into loyal customers? Let’s make it happen!</p>
+
+        <div class="questions">
+            <div class="question-block fade-in">
+                <h2>❓ Do you need a stunning, modern website?</h2>
+                <p>✅ I design sleek, visually captivating, and user-friendly websites that engage visitors.</p>
+            </div>
+
+            <div class="question-block fade-in">
+                <h2>❓ Want your site to rank higher on Google?</h2>
+                <p>✅ I’m an SEO optimization expert ensuring your site isn’t just beautiful but also discoverable!</p>
+            </div>
+
+            <div class="question-block fade-in">
+                <h2>❓ Need blazing-fast and responsive pages?</h2>
+                <p>✅ Speed is key! I build performance driven websites that load in seconds.</p>
+            </div>
+
+            <div class="question-block fade-in">
+                <h2>❓ Looking for custom solutions tailored to your brand?</h2>
+                <p>✅ Every site I build is personalized to match your unique vision and business goals.</p>
+            </div>
+        </div>
+
+        <button class="cta-button fade-in" onclick="contactMe()">✨ Let's Build Something Amazing!</button>
+    </div>
+</section>
+
+<script>
+    function contactMe() {
+        window.location.href = "#contact"; // Update with your actual contact page
+    }
+
+    // Intersection Observer for fade-in animation
+    document.addEventListener("DOMContentLoaded", () => {
+        const fadeElements = document.querySelectorAll(".fade-in");
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                    observer.unobserve(entry.target); // Prevent continuous animations
+                }
+            });
+        }, { threshold: 0.3 });
+
+        fadeElements.forEach(element => observer.observe(element));
+    });
+</script>
+
 </body>
 </html>
