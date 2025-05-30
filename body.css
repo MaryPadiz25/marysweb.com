@@ -568,7 +568,7 @@ z-index: 25;
 }
 
 
-.about {   overflow-x: hidden;
+.about {   
         flex-direction: column;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
         margin-top: 2%;
@@ -577,6 +577,7 @@ z-index: 25;
     border-radius: 10px; }
 
 .wholebody {
+    overflow-x: hidden;
     z-index: 5;
     margin-left: 2%;
     float: right;
@@ -623,10 +624,7 @@ z-index: 25;
 
 
 }
-.wholebody:hover{
-     transform: scale(2.0);
 
-}
 .details
 {
     display: none;
