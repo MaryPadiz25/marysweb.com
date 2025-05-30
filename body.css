@@ -188,12 +188,12 @@ position: relative;
  box-shadow: 0px 0px 25px rgb(0, 191, 255);
   border-radius: 10px;
     overflow: hidden;
-     transform: translateX(100%); /* Start off-screen */
-    transition: transform 0.5s ease-in-out; /* Smooth transition */
-    opacity: 0; /* Hidden initially */
+     transform: translateX(100%); 
+    transition: transform 0.5s ease-in-out; 
+    opacity: 0;
 }
 .wholebody.show {
-    transform: translateX(0); /* Slide into view */
+    transform: translateX(0); 
     opacity: 1;
 }
 .wholebody:hover{
@@ -203,13 +203,13 @@ position: relative;
 
 .aboutme {
  width: 100%;
-    transform: translateX(-50%); /* Start off-screen */
-    transition: transform 0.5s ease-in-out; /* Smooth transition */
-    opacity: 0; /* Hidden initially */
+    transform: translateX(-50%); 
+    transition: transform 0.5s ease-in-out; 
+    opacity: 0; 
 }
 
 .aboutme.show {
-    transform: translateX(0); /* Slide into view */
+    transform: translateX(0); 
     opacity: 1;
 }
 
@@ -265,7 +265,6 @@ text-align: center;
             margin-bottom: 2%;
         }
 
-        /* Navigation Buttons */
         .skill .buttons {
             text-align: center;
             margin-top: 10px;
@@ -309,11 +308,11 @@ font-family: "Poppins", sans-serif;
   transition: transform 1s ease-in-out, opacity 1s ease-in-out;
 }
 .web:first-child {
-  transform: translateX(-100px); /* Slide in from the left */
+  transform: translateX(-100px); 
 }
 
 .web:last-child {
-  transform: translateX(100px); /* Slide in from the right */
+  transform: translateX(100px);
 }
 .web.show {
   opacity: 1;
@@ -415,7 +414,7 @@ background: #e95e00;
 
 
 @media (max-width: 549.99px){
-     
+   
       header{   flex-direction: column;
         text-align: center;
         padding: 5px;
@@ -570,7 +569,7 @@ z-index: 25;
 }
 
 
-.about {   
+.about {   overflow-x: hidden;
         flex-direction: column;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
         margin-top: 2%;
@@ -579,7 +578,7 @@ z-index: 25;
     border-radius: 10px; }
 
 .wholebody {
-    z-index: 2;
+    z-index: 5;
     margin-left: 2%;
     float: right;
     width: 45%;
@@ -588,13 +587,13 @@ z-index: 25;
     box-shadow: 0px 0px 25px rgb(0, 191, 255);
     border-radius: 10px;
     overflow: hidden;
-    transform: translateX(100%); /* Start off-screen */
-    transition: transform 0.5s ease-in-out; /* Smooth transition */
-    opacity: 0; /* Hidden initially */
+    transform: translateX(100%); 
+    transition: transform 0.5s ease-in-out; 
+    opacity: 0;
 }
 
 .wholebody.show {
-    transform: translateX(0); /* Slide into view */
+    transform: translateX(0);
     opacity: 1;
 }
 
@@ -602,13 +601,13 @@ z-index: 25;
 
 .aboutme {
  
-    transform: translateX(-50%); /* Start off-screen */
-    transition: transform 0.5s ease-in-out; /* Smooth transition */
-    opacity: 0; /* Hidden initially */
+    transform: translateX(-50%); 
+    transition: transform 0.5s ease-in-out; 
+    opacity: 0; 
 }
 
 .aboutme.show {
-    transform: translateX(1%); /* Slide into view */
+    transform: translateX(1%);
     opacity: 1;
 }
 
@@ -691,11 +690,11 @@ h1{ font-size: 1.5em;
 }
 
 .web:first-child {
-  transform: translateX(-100px); /* Slide in from the left */
+  transform: translateX(-100px); 
 }
 
 .web:last-child {
-  transform: translateX(100px); /* Slide in from the right */
+  transform: translateX(100px);
 }
 
 .web.show {
@@ -706,10 +705,6 @@ h1{ font-size: 1.5em;
 .web.hide {
   opacity: 0;
   transform: translateX(-100px);
-}
-.web:hover{
-     transform: scale(1.1);
-
 }
         .skill {
             margin-top: 1%;
