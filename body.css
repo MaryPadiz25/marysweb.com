@@ -420,6 +420,88 @@ background: #e95e00;
 .booking-form:hover{
     transform: scale(1.1);
 }
+
+.hire-me {
+    max-width: 64%;
+    margin-left: 17%;
+    margin-right: 17%;
+    padding: 2% 2%;
+    overflow-x: hidden;
+    background: linear-gradient(to right, #0f172a, #1e293b);
+    color: black;
+    text-align: center;
+    margin-top: 3%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+.hire-me .container {
+    width: 100%;
+    margin: auto;
+}
+.hire-me h1 {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #ff7043;
+    font-family: "Poppins", sans-serif;
+}
+.hire-me .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.hire-me .fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.intro {
+    color: #ffffff;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    font-family: "Poppins", sans-serif;
+}
+.questions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.question-block {
+    background: rgba(255, 255, 255, 0.438);
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+.hire-me h2 {text-align: center;
+    font-size: 1.8em;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+}
+.hire-me p{
+      background: #ffffff;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 2%;
+    color: #000;
+    font-family: "Roboto", sans-serif;
+}
+.cta-button {
+   justify-self: center;
+    background: #ff7043;
+    color: white;
+    font-size: 1.4em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background: #e95e35;
+}
 }
 
 
@@ -863,4 +945,81 @@ background: #e95e00;
 .booking-form:hover{
     transform: scale(1.1);
 }
+.hire-me {
+    max-width: 94%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 2% 2%;
+    overflow-x: hidden;
+    background: linear-gradient(to right, #0f172a, #1e293b);
+    color: black;
+    text-align: center;
+    margin-top: 3%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
 }
+.hire-me .container {
+    width: 100%;
+    margin: auto;
+}
+.hire-me h1 {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #ff7043;
+    font-family: "Poppins", sans-serif;
+}
+.hire-me .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.hire-me .fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.intro {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    font-family: "Poppins", sans-serif;
+}
+.questions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.question-block {
+    background: rgba(255, 255, 255, 0.438);
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+h2 {text-align: center;
+    font-size: 1.3em;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+}
+.cta-button {
+    background: #ff7043;
+    color: white;
+    font-size: 1.4em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background: #e95e35;
+}
+}
+
+
+
+
+
+
