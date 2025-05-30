@@ -242,7 +242,6 @@ text-align: center;
         .skill .carousel-item {
             min-width: 100%;
             background: #ffffff;
-       
             padding: 3% 15%;
             box-sizing: border-box;
         }
@@ -260,7 +259,7 @@ text-align: center;
             font-size: 1.5em;
             font-family: "Roboto", sans-serif;
             line-height: 1.5;
-            color: #555;
+            color: #000;
       word-wrap: break-word;
             margin-bottom: 2%;
         }
@@ -272,7 +271,7 @@ text-align: center;
 
        .skill .button {
             background: #ff7043;
-            color: white;
+            color: #000;
             padding: 10px 15px;
             font-size: 1em;
             border: none;
@@ -292,7 +291,7 @@ text-align: center;
     display: inline;
     width: 100%;
 }
-.sample h3{
+.sample h2{
     text-align: center;
             font-size: 2.8em;
             color: #ff7043;
@@ -392,7 +391,7 @@ font-family: "Poppins", sans-serif;
     margin-right: 24%;
        width: 50%;
     padding: 12px;
-    color: #fff;
+    color: #000;
     background: #ff9334;
     border: none;
     border-radius: 5px;
@@ -678,7 +677,7 @@ h1{ font-size: 1.5em;
     width: 90%;
      margin-left: 4%;
 }
-.sample h3{ font-size: 1.5em;
+.sample h2{ font-size: 1.5em;
     margin-top: 2%;
         color: #ff7043;
         text-align: center;
@@ -738,7 +737,7 @@ h1{ font-size: 1.5em;
 
         .carousel-item {
             min-width: 100%;
-            background: #fff;
+            background: #ffffff;
             padding: 20px;
             box-sizing: border-box;
         }
@@ -746,7 +745,7 @@ h1{ font-size: 1.5em;
         .carousel-item h1 {
             font-size: 1.4em;
             font-family: "Roboto", sans-serif;
-            color: #ff7043;
+            color: #000;
             text-shadow: none;
         }
 
@@ -754,12 +753,11 @@ h1{ font-size: 1.5em;
             font-size: 1.125em;
             font-family: "Roboto", sans-serif;
             line-height: 1.5;
-            color: #555;
+            color: #000;
       word-wrap: break-word;
             margin-bottom: 2%;
         }
 
-        /* Navigation Buttons */
         .buttons {
             text-align: center;
             margin-top: 10px;
@@ -767,7 +765,7 @@ h1{ font-size: 1.5em;
 
         .button {
             background: #ff7043;
-            color: white;
+            color: #000;
             padding: 10px 15px;
             font-size: 1em;
             border: none;
@@ -830,7 +828,7 @@ h1{ font-size: 1.5em;
     margin-right: 24%;
        width: 50%;
     padding: 12px;
-    color: #fff;
+    color: #000;
     background: #ff9334;
     border: none;
     border-radius: 5px;
