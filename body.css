@@ -169,6 +169,15 @@
     .containers button{
         display: none;
     }
+    .details{
+        position: relative;
+        display: block;
+        opacity: 1;
+    }
+    .fade-in{
+        display: block;
+        opacity: 1;
+    }
 .about {    
       margin-top: 2%;
     width: 100%;
@@ -606,11 +615,10 @@ z-index: 25;
  min-height: 120px;
     transform: translateX(-50%); 
     transition: transform 0.5s ease-in-out; 
-   visibility: hidden;
+  opacity: 0;
 }
 
 .aboutme.show {
-    visibility: visible;
     transform: translateX(1%);
     opacity: 1;
 }
