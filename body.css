@@ -606,10 +606,11 @@ z-index: 25;
  min-height: 120px;
     transform: translateX(-50%); 
     transition: transform 0.5s ease-in-out; 
-    opacity: 0; 
+   visibility: hidden;
 }
 
 .aboutme.show {
+    visibility: visible;
     transform: translateX(1%);
     opacity: 1;
 }
