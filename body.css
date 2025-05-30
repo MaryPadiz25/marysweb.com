@@ -594,6 +594,7 @@ z-index: 25;
     margin-left: 2%;
     float: right;
     width: 45%;
+    max-width: 100%;
     min-height: 180px;
     object-fit: cover;
     display: inline-block;
@@ -617,10 +618,11 @@ z-index: 25;
  min-height: 120px;
     transform: translateX(-50%); 
     transition: transform 0.5s ease-in-out; 
-  opacity: 0;
+  visibility: hidden;
 }
 
 .aboutme.show {
+    visibility: visible;
     transform: translateX(1%);
     opacity: 1;
 }
