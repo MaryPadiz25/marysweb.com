@@ -75,59 +75,181 @@ typeEffect();
             <a class="social-media" href="https://www.facebook.com/mary.delacerna25/?viewas=100000686899395"><i class='bx bxl-facebook-circle'></i></a>
             <a class="social-media" href="https://www.instagram.com/mjpadiz/"><i class='bx bxl-instagram-alt' ></i></a>
             <a class="social-media" href="https://www.youtube.com/channel/UC7pWa7cCRVj5Mzm4NZ_v8wQ"><i class='bx bxl-youtube'></i></a>
-  <br>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+  const icons = document.querySelectorAll(".social-media");
+
+  icons.forEach((icon, index) => {
+    setTimeout(() => {
+      icon.classList.add("show");
+    }, index * 800); 
+  });
+});
+  </script>
+            <br>
   <br>
           </div>
 </section>
 
 <section id="about" class="about">
       <div class="containers">
+    
             <img src="me2.jpg"  loading="lazy" alt="Webdeveloper Webdesigner WebCreator" class="wholebody">
+         <script>
+            document.addEventListener("DOMContentLoaded", () => {
+    const wholebody = document.querySelector(".wholebody");
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                wholebody.classList.add("show"); // Slide in
+            } else {
+                wholebody.classList.remove("show"); // Slide out
+            }
+        });
+    }, { threshold: 0.5 });
+
+    observer.observe(wholebody);
+});
+         </script>
          
             <h1>About Me</h1>
-            <p>I am a passionate and dedicated web developer and designer with a keen ability to create engaging and user-friendly websites. </p>
-       <br>
-            <h3>Education & Awards</h3>
-            <p>My journey as a web developer and designer began in Senior High School, where I majored in Computer Programming. My dedication to the field was recognized when I received the <strong>Outstanding Student in Computer Programming award</strong>, and I graduated <strong>with honors</strong>.</p>
-       <br> 
-                   <h3 id="projects">Projects & Services</h3>
-            <p>My first foray into this industry was the creation of the Philippine Tourism Guide website. Beginning on this experience, I have begun offering services in creating online invitations for various occasions through custom websites as well as creating a booking services website for Malapascua Diving Adventures.</p>
-<div class="sample">
-       <img class="web"  loading="lazy" onclick="window.location.href='https://www.philippine-tourism-guide.com';" style="cursor: pointer;" src="philippine-tourism-guide.png" alt="">
-        <img class="web"  loading="lazy" onclick="window.location.href='https://www.malapascuadivingadventures.com';" style="cursor:pointer;" src="malapascuadivingadventures.png" alt="">
-</div>
+            <p class="aboutme">I am a passionate and dedicated web developer and designer with a keen ability to create engaging and user-friendly websites. 
+            </p>
+      
+   
+       <script>
+           document.addEventListener("DOMContentLoaded", () => {
+    const aboutme = document.querySelector(".aboutme");
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                aboutme.classList.add("show"); // Slide in
+            } else {
+                aboutme.classList.remove("show"); // Slide out
+            }
+        });
+    }, { threshold: 0.5 });
+
+    observer.observe(aboutme);
+});
+       </script>
+        <button style="background: none; border: none; color:white; text-align: center; width: 100%; font-weight: bold;"onclick="toggleDetails()" id="toggleButton">-----Read More-----</button>
+<div id="details" class="details">
+    <div>
+    <h3  class="fade-in">Education & Awards</h3>
+            <p class="fade-in">My journey as a web developer and designer began in Senior High School, where I majored in Computer Programming. My dedication to the field was recognized when I received the <strong>Outstanding Student in Computer Programming award</strong>, and I graduated <strong>with honors</strong>.</p>
+       </div><br> 
     </div>
-</section>
-      <div class="skill">
-<section id="skills" class="capabilities">
-    <h1>Capabilities</h1>
- <h2>I create user-friendly, visually compelling, and highly functional websites that not only elevate brands but also provide seamless digital experiences tailored to businesses of all sizes.</h2>     
-<div class="sets">
- <ul  class="frontend">
-            <h1>Bringing Ideas to Life</h1>
-            <br>
-            <li>-Strong foundation in HTML, CSS, and JavaScript for creating dynamic and visually appealing websites.</li>
-       <li>-Skilled in crafting responsive designs that work across different devices and screen sizes.</li>
-        <li>-Ability to use animations and effects to enhance user engagement</li>
-</ul> 
-<ul  class="wordpress">
-            <h1>Custom & Scalable Websites</h1>
-            <br>
-            <li>-Experience in WordPress theme customization to create unique brand identities.</li>
-        <li>-Familiar with plugin integration to add essential functionalities.</li>
-        <li>-Building user-friendly business websites for various industries.</li>
-</ul>  
-<ul  class="webdesign">
-            <h1>Making Interfaces Shine</h1>
-          <br>
-            <li>-Passion for designing clean and intuitive user experiences.</li>
-        <li>-Expertise in color schemes, typography, and layout design for aesthetic appeal.</li>
-        <li>-Strong focus on accessibility and ensuring websites are easy to navigate.</li>
-</ul>  
-</div>
+    </div>
+    <script>
+function toggleDetails() {
+    var details = document.getElementById("details");
+    var button = document.getElementById("toggleButton");
+    
+    if (details.style.display === "none") {
+        details.style.display = "block";
+        button.textContent = "-----See Less-----";
+    } else {
+        details.style.display = "none";
+        button.textContent = "-----Read More-----";
+    }
+}
+</script>
 
 </section>
-</div>
+
+    <div class="skill">
+        <section id="skills" class="capabilities">
+            <h1>Capabilities</h1>
+            <br>
+            <!-- Carousel Container -->
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <h1>Bringing Ideas to Life</h1>
+                        <ul>
+                            <li>- Strong foundation in HTML, CSS, and JavaScript.</li>
+                            <li>- Skilled in crafting responsive designs.</li>
+                            <li>- Ability to use animations for engagement.</li>
+                        </ul>
+                    </div>
+
+                    <div class="carousel-item">
+                        <h1>Custom & Scalable Websites</h1>
+                        <ul>
+                            <li>- Experience in WordPress theme customization.</li>
+                            <li>- Familiar with plugin integration.</li>
+                            <li>- Building user-friendly business websites.</li>
+                        </ul>
+                    </div>
+
+                    <div class="carousel-item">
+                        <h1>Making Interfaces Shine</h1>
+                        <ul>
+                            <li>- Passion for designing clean user experiences.</li>
+                            <li>- Expertise in color schemes and typography.</li>
+                            <li>- Strong focus on accessibility.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="buttons">
+                <button class="button" onclick="prevSlide()">❮ Prev</button>
+                <button class="button" onclick="nextSlide()">Next ❯</button>
+            </div>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+        const items = document.querySelectorAll(".carousel-item");
+        const totalItems = items.length;
+
+        function updateSlide() {
+            document.querySelector(".carousel").style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalItems;
+            updateSlide();
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+            updateSlide();
+        }
+
+        setInterval(nextSlide, 4000); // Auto-slide every 4 seconds
+    </script>
+           
+                   <div class="sample">
+                      <h3 id="projects">Projects & Services</h3>
+           <br>
+       <img class="web"  loading="lazy" onclick="window.location.href='https://www.philippine-tourism-guide.com';" style="cursor: pointer;" src="philippine-tourism-guide.png" alt="">
+        <img class="web"  loading="lazy" onclick="window.location.href='https://www.malapascuadivingadventures.com';" style="cursor:pointer;" src="malapascuadivingadventures.png" alt="">
+ <p>My first foray into this industry was the creation of the Philippine Tourism Guide website. Beginning on this experience, I have begun offering services in creating online invitations for various occasions through custom websites as well as creating a booking services website for Malapascua Diving Adventures.</p>
+
+    </div>
+<script>
+document.addEventListener("scroll", function () {
+  const images = document.querySelectorAll(".web");
+  images.forEach((img) => {
+    const rect = img.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100 && rect.bottom > 100) {
+      img.classList.add("show");
+      img.classList.remove("hide");
+    } else {
+      img.classList.remove("show");
+      img.classList.add("hide");
+    }
+  });
+});
+</script>
+                   
+        </section>
+ 
+
 <section id="contact" class="contact">
 
       <div class="background">
@@ -151,6 +273,5 @@ typeEffect();
               </div>
               </div>
 </section>
-    <script src="script.js"></script>
 </body>
 </html>
