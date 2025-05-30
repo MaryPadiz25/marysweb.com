@@ -524,16 +524,17 @@ z-index: 25;
   
 }
        
-.profile h2{ font-size: 1.2em;
+.profile h2 { 
+    font-size: 1.2em;
     color: #ffffff;
 }
 
 .typing {
     font-size: 1.4rem;
     color: #ffffff;
-    border-right:none; 
-    overflow: hidden;
-    width: fit-content;
+    width: 8ch;
+    display: inline-block;
+    text-align: left;
 }
 
 
