@@ -43,8 +43,9 @@
     </head>
 
 <header>
-       
-    <div class="wrappers">
+       <img src="weblogo.jpg" loading="lazy" alt="Webdeveloper Webdesigner WebCreator" class="logo">
+    <h1 style="font-size: 3.5vh; color:orange; margin-top:1%;">Cheap Website Developer</h1>
+       <div class="wrappers">
         <div>
             <input type="checkbox" id="toggle">
         <label for="toggle" class="checkbtn">&#9776;</label>
@@ -52,13 +53,30 @@
                 <ul>
                 <li> <a href="#home" title="">Home</a></li>
                 <li> <a href="#about" title="">About</a></li>
+                
+                <li> <a href="#projects" title="">Projects & Prices </a></li>
                 <li> <a href="#contact" title="">Contact</a></li>
                 <li> <a href="#skills" title="">Skills</a></li>
-                <li> <a href="#projects" title="">Projects</a></li>
+                
             
                   </ul>
                 </nav>           
             </div></div>
+            <script>
+  // Close the mobile menu when any nav link is clicked
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggle = document.getElementById('toggle');
+    const navLinks = document.querySelectorAll('.firstnav a');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (toggle && toggle.checked) {
+          toggle.checked = false;
+        }
+      });
+    });
+  });
+</script>
 </header>
 <body>
     
@@ -100,6 +118,15 @@ function typeEffect() {
 
 typeEffect();
     </script>
+    <br>
+    Building Websites with Personality
+<br><br>
+“I don’t work for an agency. I work for you, crafting websites that reflect your business and my growing journey as a freelance developer.”
+ <br>
+<br>
+Let’s build your first website together!
+<br>📲Whatsapp: +63 991 618 7033
+
 <br><br>
             <a class="social-media" href="https://www.facebook.com/mary.delacerna25/?viewas=100000686899395"><i class='bx bxl-facebook-circle'></i></a>
             <a class="social-media" href="https://www.instagram.com/mjpadiz/"><i class='bx bxl-instagram-alt' ></i></a>
@@ -115,38 +142,105 @@ typeEffect();
   });
 });
   </script>
-            <br>
-  <br>
+            <br><br>
+       <br>
           </div>
+          
 </section>
+      
 
 <section id="about" class="about">
       <div class="containers">
     
-            <img src="me2.jpg"  loading="lazy" alt="Webdeveloper Webdesigner WebCreator" class="wholebody">
+            
+         
+            <h1>About Me</h1>
+         
+            <p class="diverme">My journey isn’t just about coding; it’s about discovery.
+    <br> <br>As a professional scuba diver, I’ve experienced the thrill of thresher shark diving in Malapascua Island, snorkeled and freedived in Moalboal, Bohol, and explored the waters of Ahmed, Indonesia. Each dive taught me patience, focus, and the joy of uncovering hidden beauty — qualities I carry into my web design work.
+   <img src="me2.jpg"  loading="lazy" alt="Webdeveloper Webdesigner WebCreator" class="diver">
          <script>
     document.addEventListener("DOMContentLoaded", () => {
-    const wholebody = document.querySelector(".wholebody");
+    const diver = document.querySelector(".diver");
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                wholebody.classList.add("show"); // Slide in
+                diver.classList.add("show"); // Slide in
             } else {
-                wholebody.classList.remove("show"); // Slide out
+                diver.classList.remove("show"); // Slide out
             }
         });
     }, { rootMargin: "0px 0px -50px 0px" });
 
-    observer.observe(wholebody);
+    observer.observe(diver);
 });
          </script>
-         
-            <h1>About Me</h1>
-            <p class="aboutme">I am a passionate and dedicated web developer and designer with a keen ability to create engaging and user-friendly websites. 
-            </p>
-      
-   
-       <script>
+
+<script>
+             document.addEventListener("DOMContentLoaded", () => {
+    const diverme = document.querySelector(".diverme");
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                diverme.classList.add("show"); // Slide in
+            } else {
+                diverme.classList.remove("show"); // Slide out
+            }
+        });
+    }, { threshold: 0.5 });
+
+    observer.observe(diverme);
+});
+       </script>
+    </p>
+ <br><br>
+    <p class="travelme">
+
+            <img src="me3.jpg"   loading="lazy" alt="Webdeveloper Webdesigner WebCreator" class="traveler" >
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const traveler = document.querySelector(".traveler");
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                traveler.classList.add("show"); // Slide in
+            } else {
+                traveler.classList.remove("show"); // Slide out
+            }
+        });
+    }, { rootMargin: "0px 0px -50px 0px" });
+
+    observer.observe(traveler);
+});
+         </script>
+
+    My travels across Palawan, Boracay, Bohol, Manila, Moalboal, Cebu, and internationally to Ho Chi Minh, Phu Quoc (Vietnam), and Bali (Indonesia) have given me a broader perspective. Seeing how businesses thrive in different places has expanded my knowledge of what makes a brand stand out — insights I apply when creating websites that truly reflect a client’s identity.
+
+   <script>
+             document.addEventListener("DOMContentLoaded", () => {
+    const travelme = document.querySelector(".travelme");
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                travelme.classList.add("show"); // Slide in
+            } else {
+                travelme.classList.remove("show"); // Slide out
+            }
+        });
+    }, { threshold: 0.5 });
+
+    observer.observe(travelme);
+});
+       </script>
+       </p>
+<br><br>
+<p class="aboutme">
+    
+Whether underwater or online, I’m driven by curiosity and creativity. Diving lets me escape the noise of the world, while web development allows me to build something lasting and meaningful for others.
+<br><br>
+
+I believe websites should feel alive — not just functional, but expressive. That’s why I design with personality, precision, and a touch of adventure.
+<script>
              document.addEventListener("DOMContentLoaded", () => {
     const aboutme = document.querySelector(".aboutme");
     const observer = new IntersectionObserver(entries => {
@@ -162,11 +256,40 @@ typeEffect();
     observer.observe(aboutme);
 });
        </script>
+ <img src="me4.jpg"   loading="lazy" alt="Webdeveloper Webdesigner WebCreator" class="under" >
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const under = document.querySelector(".under");
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                under.classList.add("show"); // Slide in
+            } else {
+                under.classList.remove("show"); // Slide out
+            }
+        });
+    }, { rootMargin: "0px 0px -50px 0px" });
+
+    observer.observe(under);
+});
+         </script></p>
+<br><br>
+      
+   
+       
         <button style="background: none; border: none; color:white; text-align: center; width: 100%; font-weight: bold;"onclick="toggleDetails()" id="toggleButton">-----Read More-----</button>
 <div id="details" class="details">
     <div>
     <h3  class="fade-in">Education & Awards</h3>
-            <p class="fade-in">My journey as a web developer and designer began in Senior High School, where I majored in Computer Programming. My dedication to the field was recognized when I received the <strong>Outstanding Student in Computer Programming award</strong>, and I graduated <strong>with honors</strong>.</p>
+            <p class="fade-in">
+                <img src="me5.jpg"  loading="lazy" alt="Webdeveloper Webdesigner WebCreator" class="educ">
+                My path as a web developer and designer began in Senior High School, where I majored in Computer Programming. My dedication was recognized when I received the Outstanding Student in Computer Programming Award and graduated with honors — a milestone that fueled my passion for technology and creativity.
+                <br><br>
+Although I wasn’t able to continue to college, I never let that stop me from learning. I embraced modern technology, online resources, and hands‑on practice to expand my knowledge. Through persistence and curiosity, I successfully created functional, income‑generating websites — proof that determination and self‑learning can open doors just as wide as formal education. <br><br>
+Now, I bring that same drive and resourcefulness into my freelance career. I’m keen to offer my services to businesses and individuals who want to establish their online presence. With every project, I combine technical skill, creativity, and personal commitment to deliver websites that don’t just exist — they work, earn, and grow with you.
+
+
+</p>
        </div><br> 
     </div>
     </div>
@@ -187,12 +310,9 @@ function toggleDetails() {
 
 </section>
 
-    <div class="skill">
-        <section id="skills" class="capabilities">
+  <div class="skill">
             <h1>Capabilities</h1>
             <br>
-            <!-- Carousel Container -->
-            <div class="carousel-container">
                 <div class="carousel">
                     <div class="carousel-item">
                         <h1>Bringing Ideas to Life</h1>
@@ -219,65 +339,72 @@ function toggleDetails() {
                             <li>- Expertise in color schemes and typography.</li>
                             <li>- Strong focus on accessibility.</li>
                         </ul>
-                    </div>
                 </div>
             </div>
-
-            <!-- Navigation Buttons -->
-            <div class="buttons">
-                <button class="button" onclick="prevSlide()">❮ Prev</button>
-                <button class="button" onclick="nextSlide()">Next ❯</button>
-            </div>
     </div>
-
-    <script>
-        let currentIndex = 0;
-        const items = document.querySelectorAll(".carousel-item");
-        const totalItems = items.length;
-
-        function updateSlide() {
-            document.querySelector(".carousel").style.transform = `translateX(-${currentIndex * 100}%)`;
-        }
-
-        function nextSlide() {
-            currentIndex = (currentIndex + 1) % totalItems;
-            updateSlide();
-        }
-
-        function prevSlide() {
-            currentIndex = (currentIndex - 1 + totalItems) % totalItems;
-            updateSlide();
-        }
-
-        setInterval(nextSlide, 4000); // Auto-slide every 4 seconds
-    </script>
-           
-                   <div class="sample">
+  </div>        
+<div class="sample">
                       <h2 id="projects">Projects & Services</h2>
            <br>
-       <img class="web"  loading="lazy" onclick="window.location.href='https://www.philippine-tourism-guide.com';" style="cursor: pointer;" src="philippine-tourism-guide.png" alt="">
-        <img class="web"  loading="lazy" onclick="window.location.href='https://www.malapascuadivingadventures.com';" style="cursor:pointer;" src="malapascuadivingadventures.png" alt="">
- <p>My first foray into this industry was the creation of the Philippine Tourism Guide website. Beginning on this experience, I have begun offering services in creating online invitations for various occasions through custom websites as well as creating a booking services website for Malapascua Diving Adventures.</p>
-
+           <div class="projects">
+       <img class="web"  loading="lazy" onclick="window.location.href='https://boholdivingadventures.com';" style="cursor: pointer;" src="boholdivingadventures.png" alt="">
+        <img class="web"  loading="lazy" onclick="window.location.href='https://www.malapascuadivingadventures.com';" style="cursor:pointer;" src="malapascuadivingadventures.png" alt=""></div>
+  <p>
+    My journey into web development began with creating functional websites for local tourism and diving services. 
+    I’ve built platforms for <strong>Malapascua Diving Adventures</strong> and <strong>Bohol Diving Adventures</strong>, 
+    helping these businesses reach more travelers and streamline their bookings.  
+    <br><br>
+    I also offer personalized website services for small businesses and individuals — from online invitations to 
+    full business sites — all crafted with care and creativity.
+  </p>
+<br><br>
+  
+    <h2 id="pricing">💰 Website Packages & Pricing</h2>
+  <div class="pricing-container">
+    <div class="pricing-box">
+      <h3>One-Page Website</h3>
+      <p class="price">$300 USD</p>
+      <ul>
+        <li>✔ Custom design tailored to your brand</li>
+        <li>✔ Mobile-responsive layout</li>
+        <li>✔ Contact form or call-to-action button</li>
+        <li>✔ Basic SEO setup</li>
+        <li>✔ Social media integration</li>
+        <li>✔ Fast loading optimization</li>
+      </ul>
+      <small>*Excludes domain & business email expenses</small>
     </div>
-<script>
-document.addEventListener("scroll", function () {
-  const images = document.querySelectorAll(".web");
-  images.forEach((img) => {
-    const rect = img.getBoundingClientRect();
-    if (rect.top < window.innerHeight - 100 && rect.bottom > 100) {
-      img.classList.add("show");
-      img.classList.remove("hide");
-    } else {
-      img.classList.remove("show");
-      img.classList.add("hide");
-    }
-  });
-});
-</script>
+    <div class="pricing-box">
+      <h3>Multi-Page Website</h3>
+      <p class="price">$500–$800 USD</p>
+      <ul>
+        <li>✔ Everything in the One-Page Package</li>
+        <li>✔ Up to 5–8 custom pages</li>
+        <li>✔ WordPress theme customization</li>
+        <li>✔ Plugin integration (booking forms, galleries, etc.)</li>
+        <li>✔ Google Maps & analytics setup</li>
+        <li>✔ Basic content writing support</li>
+      </ul>
+      <small>*Excludes domain & business email expenses</small>
+    </div>
+
+    <div class="pricing-box">
+      <h3>Maintenance & Updates</h3>
+      <p class="price">Flexible Options</p>
+      <ul>
+        <li>✔ $25–$100 per update (based on complexity)</li>
+        <li>✔ Unlimited updates for $100/year</li>
+        <li>✔ Priority support</li>
+        <li>✔ Monthly performance check</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+                   </div>
                    
-        </section>
- 
 
 <section id="contact" class="contact">
 
