@@ -1,509 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
   <meta charset="UTF-8">
-  <meta name="description" content="BudgetWebsiteDeveloper.com offers affordable web design and development for startups and small businesses worldwide. Get responsive, SEO-friendly websites that help you grow online without overspending.">
-  <meta name="keywords" content="budget website developer, affordable web design, cheap website development, responsive websites, SEO-friendly websites, small business websites, startup web developer, WordPress customization, front-end, back-end, UX/UI">
-  <meta name="author" content="Mary">
-  <meta name="robots" content="index, follow">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Open Graph (Facebook, LinkedIn) -->
-  <meta property="og:title" content="Budget Website Developer | Affordable Web Design & Development">
-  <meta property="og:description" content="Professional, budget-friendly websites for startups and small businesses worldwide. Responsive, SEO-optimized, and designed to impress.">
-  <meta property="og:image" content="https://budgetwebsitedeveloper.com/images/weblogo.jpg">
-  <meta property="og:url" content="https://budgetwebsitedeveloper.com/">
-  <meta property="og:site_name" content="Budget Website Developer">
+  <title>Budget Website Developer | Affordable Web Design Philippines — Mary Padiz</title>
+  <meta name="description" content="Hi, I'm Mary — a freelance web developer in the Philippines building modern, SEO-ready websites for small businesses and startups from $300 USD. Delivered in 1–3 days.">
+  <meta name="keywords" content="budget website developer, affordable web design Philippines, freelance web developer Philippines, small business website, tourism website, responsive web design, SEO website Philippines">
+  <meta name="author" content="Mary Padiz">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://budgetwebsitedeveloper.com/">
   <meta property="og:type" content="website">
-
-  <!-- Twitter Cards -->
+  <meta property="og:site_name" content="Budget Website Developer">
+  <meta property="og:title" content="Budget Website Developer | Affordable Web Design Philippines">
+  <meta property="og:description" content="Professional, budget-friendly websites for startups and small businesses. Responsive, SEO-optimised, delivered in 1–3 days from $300 USD.">
+  <meta property="og:url" content="https://budgetwebsitedeveloper.com/">
+  <meta property="og:image" content="https://budgetwebsitedeveloper.com/weblogo.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Budget Website Developer | Affordable Web Design & Development">
-  <meta name="twitter:description" content="Affordable web design and development for startups and small businesses worldwide.">
-  <meta name="twitter:image" content="https://budgetwebsitedeveloper.com/images/weblogo.jpg">
-
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-  <!-- Styles & Fonts -->
-  <link rel="stylesheet" href="body.css">
+  <meta name="twitter:title" content="Budget Website Developer | Affordable Web Design Philippines">
+  <meta name="twitter:description" content="Affordable web design for startups and small businesses. From $300 USD. 1–3 day delivery.">
+  <meta name="twitter:image" content="https://budgetwebsitedeveloper.com/weblogo.jpg">
+  <link rel="icon" href="weblogo.jpg" type="image/jpeg">
+  <link rel="apple-touch-icon" href="weblogo.jpg">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Budget Website Developer","description":"Affordable professional web design for small businesses. 1-3 day delivery from $300 USD.","url":"https://budgetwebsitedeveloper.com","image":"https://budgetwebsitedeveloper.com/weblogo.jpg","priceRange":"$","founder":{"@type":"Person","name":"Mary Padiz","jobTitle":"Freelance Web Developer"},"contactPoint":{"@type":"ContactPoint","telephone":"+639758437132","contactType":"customer service","email":"maryjoy.padiz1@gmail.com"},"areaServed":"Worldwide"}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" as="style">
-
-  <!-- Preload Images -->
-  <link rel="preload" as="image" href="me2.jpg" type="image/jpeg">
-  <link rel="preload" as="image" href="me.jpg" type="image/jpeg">
-  <link rel="preload" as="image" href="skillsbackground.jpg" type="image/jpeg">
-  <link rel="preload" as="image" href="malapascuadivingadventures.png" type="image/png">
-  <link rel="preload" as="image" href="boholdivingadventures.png" type="image/png">
-
-  <!-- Icons -->
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-
-  <!-- Structured Data (Schema.org) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "url": "https://budgetwebsitedeveloper.com",
-    "logo": "https://budgetwebsitedeveloper.com/images/weblogo.jpg",
-    "name": "Budget Website Developer",
-    "sameAs": [
-      "https://www.facebook.com/yourpage",
-      "https://www.instagram.com/yourprofile",
-      "https://www.linkedin.com/in/yourprofile"
-    ]
-  }
-  </script>
-
-  <!-- Title -->
-  <title>Budget Website Developer | Affordable Web Design & Development</title>
-    </head>
-
-<header>
-       <img src="weblogo.jpg" loading="lazy" alt="Webdeveloper Webdesigner WebCreator" class="logo">
-    <h1 style="font-size: 3.5vh; color:orange; margin-top:1%;">Budget Website Developer</h1>
-       <div class="wrappers">
-        <div>
-            <input type="checkbox" id="toggle">
-        <label for="toggle" class="checkbtn">&#9776;</label>
-        <nav class="firstnav">
-                <ul>
-                <li> <a href="#home" title="">Home</a></li>
-                <li> <a href="#about" title="">About</a></li>
-                
-                <li> <a href="#projects" title="">Projects & Prices </a></li>
-                <li> <a href="#contact" title="">Contact</a></li>
-                <li> <a href="#skills" title="">Skills</a></li>
-                
-            
-                  </ul>
-                </nav>           
-            </div></div>
-            <script>
-  // Close the mobile menu when any nav link is clicked
-  document.addEventListener('DOMContentLoaded', function() {
-    const toggle = document.getElementById('toggle');
-    const navLinks = document.querySelectorAll('.firstnav a');
-
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        if (toggle && toggle.checked) {
-          toggle.checked = false;
-        }
-      });
-    });
-  });
-</script>
-</header>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="weblogo.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="me.jpg" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-    
-   <section class="profile" id="home">
-  <img src="me.jpg" loading="lazy" alt="Webdeveloper Webdesigner WebCreator" class="me">
-  <div class="myintro">
-    <h1>Mabuhay!</h1>  
-    <h2>I'm <strong>Mary</strong>, </h2>
-        <h2>a Freelance Web 
-            <span class="typing" id="text">
-            </span>
 
-    <script>
-        const textElement = document.getElementById("text");
-const words = ["Developer", "Designer"];
-let wordIndex = 0;
-let letterIndex = 0;
-let isDeleting = false;
+<nav id="nav" aria-label="Main navigation">
+  <div class="nav-in wrap">
+    <a href="#home" class="nav-logo" aria-label="Budget Website Developer home">
+      <img src="weblogo.jpg" alt="Budget Website Developer logo" width="36" height="36" loading="eager" fetchpriority="high">
+      <span>Budget <em>Website</em> Dev</span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
+    </ul>
+    <button class="hbg" id="hbg" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
 
-function typeEffect() {
-    const currentWord = words[wordIndex];
-    if (isDeleting) {
-        textElement.textContent = currentWord.substring(0, letterIndex - 1);
-        letterIndex--;
-    } else {
-        textElement.textContent = currentWord.substring(0, letterIndex + 1);
-        letterIndex++;
-    }
+<div class="mmenu" id="mmenu" role="navigation" aria-label="Mobile navigation">
+  <a href="#home" data-num="01">Home</a>
+  <a href="#projects" data-num="02">Projects</a>
+  <a href="#pricing" data-num="03">Pricing</a>
+  <a href="#about" data-num="04">About</a>
+  <a href="#skills" data-num="05">Skills</a>
+  <a href="#contact" data-num="06">Contact</a>
+  <div class="mmenu-footer">
+    <a href="https://wa.me/639758437132" target="_blank" rel="noopener">WhatsApp</a>
+    <span>·</span>
+    <a href="mailto:maryjoy.padiz1@gmail.com">Email</a>
+    <span>·</span>
+    <span>Philippines</span>
+  </div>
+</div>
 
-    if (!isDeleting && letterIndex === currentWord.length) {
-        setTimeout(() => isDeleting = true, 1000); // Pause before deleting
-    } else if (isDeleting && letterIndex === 0) {
-        isDeleting = false;
-        wordIndex = (wordIndex + 1) % words.length; // Switch word
-    }
-
-    setTimeout(typeEffect, isDeleting ? 80 : 150);
-}
-
-typeEffect();
-    </script>
-    <br>
-    Building Websites with Personality
-<br><br>
-“I don’t work for an agency. I work for you, crafting websites that reflect your business and my growing journey as a freelance developer.”
- <br>
-<br>
-Let’s build your first website together!
-<br>📲Whatsapp: +63 991 618 7033
-
-<br><br>
-            <a class="social-media" href="https://www.facebook.com/mary.delacerna25/?viewas=100000686899395"><i class='bx bxl-facebook-circle'></i></a>
-            <a class="social-media" href="https://www.instagram.com/mjpadiz/"><i class='bx bxl-instagram-alt' ></i></a>
-            <a class="social-media" href="https://www.youtube.com/channel/UC7pWa7cCRVj5Mzm4NZ_v8wQ"><i class='bx bxl-youtube'></i></a>
-  <script>
-     document.addEventListener("DOMContentLoaded", function () {
-  const icons = document.querySelectorAll(".social-media");
-
-  icons.forEach((icon, index) => {
-    setTimeout(() => {
-      icon.classList.add("show");
-    }, index * 800); 
-  });
-});
-  </script>
-            <br><br>
-       <br>
-          </div>
-          
-</section>
-      
-
-<section id="about" class="about">
-      <div class="containers">
-    
-            
-         
-            <h1>About Me</h1>
-         
-            <p class="diverme">My journey isn’t just about coding; it’s about discovery.
-    <br> <br>As a professional scuba diver, I’ve experienced the thrill of thresher shark diving in Malapascua Island, snorkeled and freedived in Moalboal, Bohol, and explored the waters of Ahmed, Indonesia. Each dive taught me patience, focus, and the joy of uncovering hidden beauty; qualities I carry into my web design work.
-   <img src="me2.jpg"  loading="lazy" alt="Webdeveloper Webdesigner WebCreator" class="diver">
-         <script>
-    document.addEventListener("DOMContentLoaded", () => {
-    const diver = document.querySelector(".diver");
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                diver.classList.add("show"); // Slide in
-            } else {
-                diver.classList.remove("show"); // Slide out
-            }
-        });
-    }, { rootMargin: "0px 0px -50px 0px" });
-
-    observer.observe(diver);
-});
-         </script>
-
-<script>
-             document.addEventListener("DOMContentLoaded", () => {
-    const diverme = document.querySelector(".diverme");
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                diverme.classList.add("show"); // Slide in
-            } else {
-                diverme.classList.remove("show"); // Slide out
-            }
-        });
-    }, { threshold: 0.5 });
-
-    observer.observe(diverme);
-});
-       </script>
-    </p>
- <br><br>
-    <p class="travelme">
-
-            <img src="me3.jpg"   loading="lazy" alt="Webdeveloper Webdesigner WebCreator" class="traveler" >
-    <script>
-    document.addEventListener("DOMContentLoaded", () => {
-    const traveler = document.querySelector(".traveler");
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                traveler.classList.add("show"); // Slide in
-            } else {
-                traveler.classList.remove("show"); // Slide out
-            }
-        });
-    }, { rootMargin: "0px 0px -50px 0px" });
-
-    observer.observe(traveler);
-});
-         </script>
-
-    My travels across Palawan, Boracay, Bohol, Manila, Moalboal, Cebu, and internationally to Ho Chi Minh, Phu Quoc (Vietnam), and Bali (Indonesia) have given me a broader perspective. Seeing how businesses thrive in different places has expanded my knowledge of what makes a brand stand out; insights I apply when creating websites that truly reflect a client’s identity.
-
-   <script>
-             document.addEventListener("DOMContentLoaded", () => {
-    const travelme = document.querySelector(".travelme");
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                travelme.classList.add("show"); // Slide in
-            } else {
-                travelme.classList.remove("show"); // Slide out
-            }
-        });
-    }, { threshold: 0.5 });
-
-    observer.observe(travelme);
-});
-       </script>
-       </p>
-<br><br>
-<p class="aboutme">
-    
-Whether underwater or online, I’m driven by curiosity and creativity. Diving lets me escape the noise of the world, while web development allows me to build something lasting and meaningful for others.
-<br><br>
-
-I believe websites should feel alive; not just functional, but expressive. That’s why I design with personality, precision, and a touch of adventure.
-<script>
-             document.addEventListener("DOMContentLoaded", () => {
-    const aboutme = document.querySelector(".aboutme");
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                aboutme.classList.add("show"); // Slide in
-            } else {
-                aboutme.classList.remove("show"); // Slide out
-            }
-        });
-    }, { threshold: 0.5 });
-
-    observer.observe(aboutme);
-});
-       </script>
- <img src="me4.jpg"   loading="lazy" alt="Webdeveloper Webdesigner WebCreator" class="under" >
-    <script>
-    document.addEventListener("DOMContentLoaded", () => {
-    const under = document.querySelector(".under");
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                under.classList.add("show"); // Slide in
-            } else {
-                under.classList.remove("show"); // Slide out
-            }
-        });
-    }, { rootMargin: "0px 0px -50px 0px" });
-
-    observer.observe(under);
-});
-         </script></p>
-<br><br>
-      
-   
-       
-        <button style="background: none; border: none; color:white; text-align: center; width: 100%; font-weight: bold;"onclick="toggleDetails()" id="toggleButton">-----Read More-----</button>
-<div id="details" class="details">
-    <div>
-    <h3  class="fade-in">Education & Awards</h3>
-            <p class="fade-in">
-                <img src="me5.jpg"  loading="lazy" alt="Webdeveloper Webdesigner WebCreator" class="educ">
-                My path as a web developer and designer began in Senior High School, where I majored in Computer Programming. My dedication was recognized when I received the Outstanding Student in Computer Programming Award and graduated with honors; a milestone that fueled my passion for technology and creativity.
-                <br><br>
-Although I wasn’t able to continue to college, I never let that stop me from learning. I embraced modern technology, online resources, and hands‑on practice to expand my knowledge. Through persistence and curiosity, I successfully created functional, income‑generating websites; proof that determination and self‑learning can open doors just as wide as formal education. <br><br>
-Now, I bring that same drive and resourcefulness into my freelance career. I’m keen to offer my services to businesses and individuals who want to establish their online presence. With every project, I combine technical skill, creativity, and personal commitment to deliver websites that don’t just exist; they work, earn, and grow with you.
-
-
-</p>
-       </div><br> 
+<section class="hero" id="home" aria-label="Hero section">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-grid-bg" aria-hidden="true"></div>
+  <div class="wrap hero-wrap">
+    <div class="hero-copy">
+      <div class="hero-badge">
+        <span class="badge-dot" aria-hidden="true"></span>
+        Available for new projects
+      </div>
+      <h1 class="hero-h1">
+        Modern websites<br>
+        built <span class="accent">affordable.</span><br>
+        <span class="tw-wrap"><span class="tw" id="tw" aria-live="polite">Developer.</span><span class="tw-cursor" aria-hidden="true">|</span></span>
+      </h1>
+      <p class="hero-sub">Hi, I'm Mary — a freelance web developer helping small businesses, startups &amp; tourism brands launch a polished online presence without the agency price tag.</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-primary">Start your project →</a>
+        <a href="#projects" class="btn btn-ghost">View work</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="snum">$300</div>
+          <div class="slbl">Starting price</div>
+        </div>
+        <div class="sbar" aria-hidden="true"></div>
+        <div class="hero-stat">
+          <div class="snum">1–3</div>
+          <div class="slbl">Day delivery</div>
+        </div>
+        <div class="sbar" aria-hidden="true"></div>
+        <div class="hero-stat">
+          <div class="snum">100%</div>
+          <div class="slbl">Mobile-first</div>
+        </div>
+      </div>
     </div>
+    <div class="hero-media">
+      <div class="hero-img-frame">
+        <img src="me.jpg" alt="Mary Padiz — freelance web developer Philippines" width="520" height="640" loading="eager" fetchpriority="high">
+        <div class="hero-tag">
+          <span class="tag-dot" aria-hidden="true"></span>
+          Open to work globally
+        </div>
+      </div>
     </div>
-    <script>
-function toggleDetails() {
-    var details = document.getElementById("details");
-    var button = document.getElementById("toggleButton");
-    
-    if (details.style.display === "none") {
-        details.style.display = "block";
-        button.textContent = "-----See Less-----";
-    } else {
-        details.style.display = "none";
-        button.textContent = "-----Read More-----";
-    }
-}
-</script>
-
+  </div>
 </section>
 
-  <div class="skill">
-            <h1>Capabilities</h1>
-            <br>
-                <div class="carousel">
-                    <div class="carousel-item">
-                        <h1>Bringing Ideas to Life</h1>
-                        <ul>
-                            <li>- Strong foundation in HTML, CSS, and JavaScript.</li>
-                            <li>- Skilled in crafting responsive designs.</li>
-                            <li>- Ability to use animations for engagement.</li>
-                        </ul>
-                    </div>
-
-                    <div class="carousel-item">
-                        <h1>Custom & Scalable Websites</h1>
-                        <ul>
-                            <li>- Experience in WordPress theme customization.</li>
-                            <li>- Familiar with plugin integration.</li>
-                            <li>- Building user-friendly business websites.</li>
-                        </ul>
-                    </div>
-
-                    <div class="carousel-item">
-                        <h1>Making Interfaces Shine</h1>
-                        <ul>
-                            <li>- Passion for designing clean user experiences.</li>
-                            <li>- Expertise in color schemes and typography.</li>
-                            <li>- Strong focus on accessibility.</li>
-                        </ul>
-                </div>
-            </div>
-    </div>
-  </div>        
-<div class="sample">
-                      <h2 id="projects">Projects & Services</h2>
-           <br>
-           <div class="projects">
-       <img class="web"  loading="lazy" onclick="window.location.href='https://boholdivingadventures.com';" style="cursor: pointer;" src="boholdivingadventures.png" alt="">
-        <img class="web"  loading="lazy" onclick="window.location.href='https://www.malapascuadivingadventures.com';" style="cursor:pointer;" src="malapascuadivingadventures.png" alt=""></div>
-  <p>
-    My journey into web development began with creating functional websites for local tourism and diving services. 
-    I’ve built platforms for <strong>Malapascua Diving Adventures</strong> and <strong>Bohol Diving Adventures</strong>, 
-    helping these businesses reach more travelers and streamline bookings.  
-    <br><br>
-    I also offer personalized website services for small businesses and individuals from online invitations to 
-    full business sites all crafted with care and creativity.
-  </p>
-<br><br>
-  
-    <h2 id="pricing">💰 Website Packages & Pricing</h2>
-  <div class="pricing-container">
-    <div class="pricing-box">
-      <h3>One-Page Website</h3>
-      <p class="price">$300 USD</p>
-      <ul>
-        <li>✔ Custom design tailored to your brand</li>
-        <li>✔ Mobile-responsive layout</li>
-        <li>✔ Contact form or call-to-action button</li>
-        <li>✔ Basic SEO setup</li>
-        <li>✔ Social media integration</li>
-        <li>✔ Fast loading optimization</li>
-      </ul>
-      <small>*Excludes domain & business email expenses</small>
-    </div>
-    <div class="pricing-box">
-      <h3>Multi-Page Website</h3>
-      <p class="price">$500–$800 USD</p>
-      <ul>
-        <li>✔ Everything in the One-Page Package</li>
-        <li>✔ Up to 5–8 custom pages</li>
-        <li>✔ WordPress theme customization</li>
-        <li>✔ Plugin integration (booking forms, galleries, etc.)</li>
-        <li>✔ Google Maps & analytics setup</li>
-        <li>✔ Basic content writing support</li>
-      </ul>
-      <small>*Excludes domain & business email expenses</small>
-    </div>
-
-    <div class="pricing-box">
-      <h3>Maintenance & Updates</h3>
-      <p class="price">Flexible Options</p>
-      <ul>
-        <li>✔ $25–$100 per update (based on complexity)</li>
-        <li>✔ Unlimited updates for $100/year</li>
-        <li>✔ Priority support</li>
-        <li>✔ Monthly performance check</li>
-      </ul>
+<div class="marquee-strip" aria-hidden="true">
+  <div class="marquee-track">
+    <div class="marquee-inner">
+      <span>Web Design</span><span class="mdot">✦</span><span>SEO Ready</span><span class="mdot">✦</span><span>Mobile First</span><span class="mdot">✦</span><span>Fast Delivery</span><span class="mdot">✦</span><span>WordPress</span><span class="mdot">✦</span><span>Tourism Sites</span><span class="mdot">✦</span><span>Landing Pages</span><span class="mdot">✦</span><span>Small Business</span><span class="mdot">✦</span><span>HTML &amp; CSS</span><span class="mdot">✦</span><span>Web Design</span><span class="mdot">✦</span><span>SEO Ready</span><span class="mdot">✦</span><span>Mobile First</span><span class="mdot">✦</span><span>Fast Delivery</span><span class="mdot">✦</span><span>WordPress</span><span class="mdot">✦</span><span>Tourism Sites</span><span class="mdot">✦</span><span>Landing Pages</span><span class="mdot">✦</span><span>Small Business</span><span class="mdot">✦</span><span>HTML &amp; CSS</span><span class="mdot">✦</span>
     </div>
   </div>
 </div>
 
-
-
-                   </div>
-                   
-
-<section id="contact" class="contact">
-
-      <div class="background">
-         
-              <div class="booking-form">
-                  <form action="https://api.web3forms.com/submit" method="POST">
-                      <input type="hidden" name="access_key" value="31719e02-64d3-4156-af9f-463e05262759">
-                        <h1>Get in Touch</h1>
-                      <label for="name">Name:</label>
-                      <input type="text" name="name" id="name" required>
-      
-                      <label for="Email">Email:</label>
-                      <input type="text" name="Email" id="Email" required>
-      
-                      <label for="number">Contact No.:(optional)</label>
-                      <input type="number" name="number" id="number">
-                      
-      
-                      <button type="submit">SUBMIT</button>
-                    </form>
-              </div>
-              </div>
-</section>
-<section id="why-hire-me" class="hire-me">
-    <div class="container">
-        <h1 class="fade-in">Why Hire Me?</h1>
-        <p class="intro fade-in">🚀 Need a website that stands out, ranks high, and converts visitors into loyal customers? Let’s make it happen!</p>
-
-        <div class="questions">
-            <div class="question-block fade-in">
-                <h2>❓ Do you need a stunning, modern website?</h2>
-                <p>✅ I design sleek, visually captivating, and user-friendly websites that engage visitors.</p>
-            </div>
-
-            <div class="question-block fade-in">
-                <h2>❓ Want your site to rank higher on Google?</h2>
-                <p>✅ I’m an SEO optimization expert ensuring your site isn’t just beautiful but also discoverable!</p>
-            </div>
-
-            <div class="question-block fade-in">
-                <h2>❓ Need blazing-fast and responsive pages?</h2>
-                <p>✅ Speed is key! I build performance driven websites that load in seconds.</p>
-            </div>
-
-            <div class="question-block fade-in">
-                <h2>❓ Looking for custom solutions tailored to your brand?</h2>
-                <p>✅ Every site I build is personalized to match your unique vision and business goals.</p>
-            </div>
-        </div>
-
-        <button class="cta-button fade-in" onclick="contactMe()">✨ Let's Build Something Amazing!</button>
+<section class="intro-section" aria-label="Why choose me">
+  <div class="wrap">
+    <div class="intro-grid">
+      <div class="intro-card rv">
+        <div class="intro-icon" aria-hidden="true">🚀</div>
+        <h2>Fast delivery</h2>
+        <p>Launch your website in just 1–3 days with clear milestones, fast communication, and reliable results every time.</p>
+      </div>
+      <div class="intro-card rv d1">
+        <div class="intro-icon" aria-hidden="true">✦</div>
+        <h2>Quality first</h2>
+        <p>Clean layouts, accessible structure, and polished visual branding that fits your market and converts visitors.</p>
+      </div>
+      <div class="intro-card rv d2">
+        <div class="intro-icon" aria-hidden="true">💰</div>
+        <h2>Real value</h2>
+        <p>Pricing designed for new businesses, freelancers, and local services — professional results without the agency bill.</p>
+      </div>
     </div>
+  </div>
 </section>
 
-<script>
-    function contactMe() {
-        window.location.href = "#contact"; // Update with your actual contact page
-    }
+<section class="projects-section" id="projects" aria-labelledby="proj-title">
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="section-label">Projects &amp; Services</span>
+      <h2 id="proj-title">Live websites built<br>for real businesses</h2>
+    </div>
+    <div class="proj-grid">
+      <a href="https://www.boholdivingadventures.com" target="_blank" rel="noopener noreferrer" class="proj-card rv" aria-label="Visit Bohol Diving Adventures website">
+        <div class="proj-img-wrap">
+          <img data-src="bohol.jpg" src="" alt="Bohol Diving Adventures — scuba diving Philippines" width="600" height="340" loading="lazy" decoding="async">
+        </div>
+        <div class="proj-body">
+          <span class="proj-tag">Tourism &amp; Diving</span>
+          <h3>Bohol Diving Adventures</h3>
+          <p>SEO-optimised booking site for a Bohol-based scuba diving business. Full-page hero, animated package cards, booking modal &amp; mobile-first layout.</p>
+          <span class="proj-link">Visit live site <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
+        </div>
+      </a>
+      <a href="https://www.malapascuadivingadventures.com" target="_blank" rel="noopener noreferrer" class="proj-card rv d1" aria-label="Visit Malapascua Diving Adventures website">
+        <div class="proj-img-wrap">
+          <img data-src="malapascua.jpg" src="" alt="Malapascua Diving Adventures — thresher shark dives Cebu" width="600" height="340" loading="lazy" decoding="async">
+        </div>
+        <div class="proj-body">
+          <span class="proj-tag">Tourism &amp; Adventure</span>
+          <h3>Malapascua Diving Adventures</h3>
+          <p>Cinematic landing page for Malapascua Island's premier thresher shark dive operator. Package listings, WhatsApp CTA &amp; full SEO structure.</p>
+          <span class="proj-link">Visit live site <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
+        </div>
+      </a>
+    </div>
+    <div class="proj-mini-grid">
+      <div class="proj-mini rv">
+        <div class="proj-mini-img"><img data-src="me8.jpg" src="" alt="Custom branding web design" width="400" height="220" loading="lazy" decoding="async"></div>
+        <div class="proj-mini-body"><h3>Custom Branding</h3><p>Brand-aligned visuals, typography and layouts that make your business feel professional and trustworthy online.</p></div>
+      </div>
+      <div class="proj-mini rv d1">
+        <div class="proj-mini-img"><img data-src="me10.jpg" src="" alt="High-conversion landing page design" width="400" height="220" loading="lazy" decoding="async"></div>
+        <div class="proj-mini-body"><h3>Landing Pages</h3><p>High-conversion, single-page sites for packages, lead capture, and booking campaigns. Built fast, tested for results.</p></div>
+      </div>
+      <div class="proj-mini rv d2">
+        <div class="proj-mini-img"><img data-src="me6.jpg" src="" alt="Responsive business website for startups" width="400" height="220" loading="lazy" decoding="async"></div>
+        <div class="proj-mini-body"><h3>Business Websites</h3><p>Multi-page WordPress or HTML sites for local businesses and startups needing a full online presence from scratch.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    // Intersection Observer for fade-in animation
-    document.addEventListener("DOMContentLoaded", () => {
-        const fadeElements = document.querySelectorAll(".fade-in");
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("show");
-                    observer.unobserve(entry.target); // Prevent continuous animations
-                }
-            });
-        }, { threshold: 0.3 });
+<section class="pricing-section" id="pricing" aria-labelledby="price-title">
+  <div class="wrap">
+    <div class="section-head rv" style="text-align:center;align-items:center">
+      <span class="section-label">Pricing</span>
+      <h2 id="price-title">Transparent packages<br>for every business</h2>
+    </div>
+    <div class="pricing-grid">
+      <div class="price-card rv">
+        <div class="price-icon" aria-hidden="true">🌱</div>
+        <h3>Starter Website</h3>
+        <div class="price-num">$300 <span>USD</span></div>
+        <ul class="price-list" role="list">
+          <li>One custom page</li>
+          <li>Responsive design</li>
+          <li>SEO-ready structure</li>
+          <li>Contact form</li>
+          <li>1–3 day delivery</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline-card">Get started</a>
+      </div>
+      <div class="price-card price-featured rv d1">
+        <div class="price-badge">Most Popular</div>
+        <div class="price-icon" aria-hidden="true">🚀</div>
+        <h3>Growth Website</h3>
+        <div class="price-num">$500 <span>– $800 USD</span></div>
+        <ul class="price-list" role="list">
+          <li>Up to 5 pages</li>
+          <li>WordPress or HTML/CSS</li>
+          <li>Booking or gallery</li>
+          <li>Performance optimised</li>
+          <li>1–3 day delivery</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">Get started</a>
+      </div>
+      <div class="price-card rv d2">
+        <div class="price-icon" aria-hidden="true">🔧</div>
+        <h3>Support &amp; Updates</h3>
+        <div class="price-num">Flexible</div>
+        <ul class="price-list" role="list">
+          <li>Content updates</li>
+          <li>Security &amp; maintenance</li>
+          <li>Monthly review</li>
+          <li>Priority response</li>
+          <li>Ongoing support</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline-card">Get started</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-        fadeElements.forEach(element => observer.observe(element));
-    });
-</script>
+<section class="about-section" id="about" aria-labelledby="about-title">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-imgs rvl">
+        <div class="about-ring" aria-hidden="true"></div>
+        <div class="about-main-img">
+          <img data-src="me4.jpg" src="" alt="Mary Padiz — freelance web developer Philippines" width="540" height="580" loading="lazy" decoding="async">
+        </div>
+        <div class="about-float-img">
+          <img data-src="me7.jpg" src="" alt="Mary exploring Philippines" width="160" height="200" loading="lazy" decoding="async">
+        </div>
+        <div class="about-exp-badge">
+          <span class="exp-num">3+</span>
+          <span class="exp-lbl">Years<br>building</span>
+        </div>
+      </div>
+      <div class="about-copy rvr">
+        <span class="section-label">About Me</span>
+        <h2 id="about-title">Freelance developer with a practical, polished approach.</h2>
+        <p>My experience working with local tourism brands, personal businesses and startups taught me how to build websites that feel professional and work for real customers.</p>
+        <p>I combine clean design, thoughtful structure, and low-cost solutions that make an online presence simple, strong, and genuinely effective.</p>
+        <div class="about-facts">
+          <div class="fact"><strong>Experience</strong><span>WordPress customisation, responsive landing pages, and business websites for tourism, services &amp; personal brands.</span></div>
+          <div class="fact"><strong>Strengths</strong><span>Visual polish, mobile-first usability, SEO structure, and clear project communication from brief to launch.</span></div>
+          <div class="fact"><strong>Why hire me</strong><span>I focus on affordable quality — websites that look premium and actually help your business grow.</span></div>
+        </div>
+        <a href="#contact" class="btn btn-primary">Work with me →</a>
+      </div>
+    </div>
+  </div>
+</section>
 
+<section class="skills-section" id="skills" aria-labelledby="skills-title">
+  <div class="wrap">
+    <div class="skills-grid">
+      <div class="skills-visual rvl">
+        <div class="skills-img-wrap">
+          <img data-src="me3.jpg" src="" alt="Mary working on web design" width="560" height="480" loading="lazy" decoding="async">
+          <div class="skills-overlay">
+            <div class="so-num">100%</div>
+            <div class="so-lbl">Client satisfaction goal</div>
+          </div>
+        </div>
+      </div>
+      <div class="skills-copy rvr">
+        <span class="section-label">Technical Skills</span>
+        <h2 id="skills-title">Capabilities that<br>support modern web growth</h2>
+        <div class="skill-bars" id="skill-bars">
+          <div class="skill-row"><div class="skill-hdr"><span>HTML &amp; CSS</span><span class="spct">100%</span></div><div class="bar-track"><div class="bar-fill" data-w="100"></div></div></div>
+          <div class="skill-row"><div class="skill-hdr"><span>WordPress</span><span class="spct">90%</span></div><div class="bar-track"><div class="bar-fill" data-w="90"></div></div></div>
+          <div class="skill-row"><div class="skill-hdr"><span>UI / UX Design</span><span class="spct">88%</span></div><div class="bar-track"><div class="bar-fill" data-w="88"></div></div></div>
+          <div class="skill-row"><div class="skill-hdr"><span>JavaScript</span><span class="spct">85%</span></div><div class="bar-track"><div class="bar-fill" data-w="85"></div></div></div>
+          <div class="skill-row"><div class="skill-hdr"><span>SEO Optimisation</span><span class="spct">82%</span></div><div class="bar-track"><div class="bar-fill" data-w="82"></div></div></div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<section class="contact-section" id="contact" aria-labelledby="contact-title">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-info rvl">
+        <span class="section-label">Let's Connect</span>
+        <h2 id="contact-title">Ready to launch<br>your website?</h2>
+        <p>Send a message and I'll help you choose the right package, design your brand experience, and build a website that feels premium — without the premium price.</p>
+        <div class="c-item">
+          <div class="c-icon" aria-hidden="true">📱</div>
+          <div><strong>WhatsApp</strong><a href="https://wa.me/639758437132" target="_blank" rel="noopener noreferrer">+63 975 843 7132</a></div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon" aria-hidden="true">✉️</div>
+          <div><strong>Email</strong><a href="mailto:maryjoy.padiz1@gmail.com">maryjoy.padiz1@gmail.com</a></div>
+        </div>
+        <div class="socials">
+          <a href="https://www.facebook.com/mary.delacerna25/?viewas=100000686899395" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/mjpadiz/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://www.youtube.com/channel/UC7pWa7cCRVj5Mzm4NZ_v8wQ" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.41 19.1C5.12 19.56 12 19.56 12 19.56s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
+        </div>
+      </div>
+      <div class="contact-form-wrap rvr">
+        <form class="cform" action="https://api.web3forms.com/submit" method="POST" id="cform" aria-label="Contact form" novalidate>
+          <input type="hidden" name="access_key" value="0c586c24-4e03-4d14-b96e-fc9254f25314">
+          <input type="hidden" name="subject" value="New Project Inquiry — Budget Website Developer">
+          <div class="fg"><label class="fl" for="cname">Your name</label><input class="fi" type="text" id="cname" name="name" placeholder="e.g. Juan dela Cruz" required autocomplete="name"></div>
+          <div class="fg"><label class="fl" for="cemail">Email address</label><input class="fi" type="email" id="cemail" name="email" placeholder="you@example.com" required autocomplete="email"></div>
+          <div class="fg"><label class="fl" for="cmsg">Tell me about your project</label><textarea class="fi" id="cmsg" name="message" rows="5" placeholder="What kind of website? Budget? Timeline?"></textarea></div>
+          <button type="submit" class="btn btn-primary btn-full" id="submit-btn">Send message →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer role="contentinfo">
+  <div class="footer-in wrap">
+    <div class="footer-brand">
+      <img src="weblogo.jpg" alt="Budget Website Developer" width="28" height="28" loading="lazy">
+      <span>Budget Website Developer</span>
+    </div>
+    <p>© 2026 Budget Website Developer. Built for small businesses, startups &amp; freelancers.</p>
+    <p class="footer-sub">Philippines · Global clients welcome</p>
+  </div>
+</footer>
+
+<button id="stb" aria-label="Scroll to top" title="Back to top">↑</button>
+
+<script src="script.js" defer></script>
 </body>
 </html>
-
-
-
-
-
