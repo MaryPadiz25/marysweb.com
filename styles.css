@@ -340,9 +340,10 @@ section  { position:relative; }
 }
 .hero-wrap {
   display:grid; grid-template-columns:1fr 1fr;
-  align-items:center; gap:56px; width:100%;
+  align-items:center; justify-items:center;
+  gap:56px; width:100%;
 }
-.hero-copy { z-index:1; }
+.hero-copy { z-index:1; max-width:560px; width:100%; }
 .hero-badge {
   display:inline-flex; align-items:center; gap:8px;
   background:rgba(200,241,53,.08); border:1px solid rgba(200,241,53,.22);
@@ -706,12 +707,13 @@ footer p { font-size:.78rem; color:var(--muted); }
 /* ── TABLET ≤1024px ── */
 @media (max-width:1024px) {
   .hero            { padding:92px 0 60px; min-height:auto; }
-  .hero-wrap       { grid-template-columns:1fr; gap:40px; text-align:center; }
+  .hero-wrap       { grid-template-columns:1fr; gap:40px; text-align:center; justify-items:center; }
   .hero-copy       { display:flex; flex-direction:column; align-items:center; max-width:600px; margin:0 auto; }
   .hero-sub        { max-width:520px; }
   .hero-btns       { justify-content:center; }
   .hero-stats      { justify-content:center; gap:20px; flex-wrap:wrap; }
-  .hero-media      { max-width:440px; margin:0 auto; width:100%; }
+  .hero-media      { max-width:440px; margin:0 auto; width:100%; display:flex; justify-content:center; }
+  .hero-img-frame  { width:100%; }
   .hero-float-card { right:-12px; }
 
   .intro-grid      { grid-template-columns:repeat(2,1fr); }
@@ -746,6 +748,7 @@ footer p { font-size:.78rem; color:var(--muted); }
   .hero            { padding:84px 0 52px; }
   .hero-h1         { font-size:clamp(1.6rem,5.5vw,2.2rem); }
   .hero-img-frame  { max-height:380px; }
+  .hero-media      { max-width:400px; }
   .snum            { font-size:1.4rem; }
 
   .intro-section   { padding:56px 0; }
@@ -791,6 +794,7 @@ footer p { font-size:.78rem; color:var(--muted); }
   .hero-badge      { font-size:.66rem; padding:5px 13px; }
   .hero-h1         { font-size:clamp(1.5rem,5vw,2rem); }
   .hero-img-frame  { max-height:320px; border-radius:16px; }
+  .hero-media      { max-width:340px; }
   .hero-float-card { display:none; }
   .snum            { font-size:1.3rem; }
   .slbl            { font-size:.68rem; }
