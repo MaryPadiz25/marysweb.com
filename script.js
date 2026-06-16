@@ -143,13 +143,15 @@ if (stb) {
   stb.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 }
 
-/* ── CONTACT FORM FEEDBACK ── */
+/* ── CONTACT FORM — Web3Forms ── */
 const cform     = document.getElementById('cform');
 const submitBtn = document.getElementById('submit-btn');
 
 if (cform && submitBtn) {
-  cform.addEventListener('submit', e => {
-    // Basic client-side validation before submit
+  cform.addEventListener('submit', async e => {
+    e.preventDefault();
+
+    // Client-side validation
     const required = cform.querySelectorAll('[required]');
     let valid = true;
     required.forEach(field => {
@@ -160,11 +162,47 @@ if (cform && submitBtn) {
         field.style.borderColor = '';
       }
     });
-    if (!valid) { e.preventDefault(); return; }
+    if (!valid) return;
 
-    submitBtn.textContent = '⏳ Sending...';
-    submitBtn.disabled    = true;
+    // Sending state
+    submitBtn.textContent   = '⏳ Sending...';
+    submitBtn.disabled      = true;
     submitBtn.style.opacity = '.7';
+
+    try {
+      const formData = new FormData(cform);
+      const res      = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body:   formData
+      });
+      const data = await res.json();
+
+      if (data.success) {
+        submitBtn.textContent   = '✅ Message Sent!';
+        submitBtn.style.background = '#22c55e';
+        submitBtn.style.opacity = '1';
+        cform.reset();
+        // Reset button after 4s
+        setTimeout(() => {
+          submitBtn.textContent      = 'Send Message →';
+          submitBtn.disabled         = false;
+          submitBtn.style.opacity    = '1';
+          submitBtn.style.background = '';
+        }, 4000);
+      } else {
+        throw new Error(data.message || 'Submission failed');
+      }
+    } catch (err) {
+      submitBtn.textContent      = '❌ Failed — Try Again';
+      submitBtn.style.background = '#ef4444';
+      submitBtn.style.opacity    = '1';
+      submitBtn.disabled         = false;
+      console.error('Web3Forms error:', err);
+      setTimeout(() => {
+        submitBtn.textContent      = 'Send Message →';
+        submitBtn.style.background = '';
+      }, 4000);
+    }
   });
 }
 
