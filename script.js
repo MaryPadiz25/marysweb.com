@@ -1,5 +1,6 @@
 /* ═══════════════════════════════════════════════
-   BUDGET WEBSITE DEVELOPER — main.js
+   BUDGET WEBSITE DEVELOPER — script.js
+   SEO & Performance Optimized
    ═══════════════════════════════════════════════ */
 
 'use strict';
@@ -8,10 +9,10 @@
 const nav = document.getElementById('nav');
 const onScroll = () => nav.classList.toggle('sc', window.scrollY > 50);
 window.addEventListener('scroll', onScroll, { passive: true });
-onScroll(); // run once on load
+onScroll();
 
 /* ── HAMBURGER / MOBILE MENU ── */
-const hbg = document.getElementById('hbg');
+const hbg   = document.getElementById('hbg');
 const mmenu = document.getElementById('mmenu');
 
 function closeMenu() {
@@ -33,25 +34,18 @@ function openMenu() {
 }
 
 hbg.addEventListener('click', () => {
-  const isOpen = mmenu.classList.contains('op');
-  isOpen ? closeMenu() : openMenu();
+  mmenu.classList.contains('op') ? closeMenu() : openMenu();
 });
 
-// Close menu when a link is clicked
-mmenu.querySelectorAll('a').forEach(a => {
-  a.addEventListener('click', () => closeMenu());
-});
+mmenu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
 
-// Close menu on Escape key
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape' && mmenu.classList.contains('op')) closeMenu();
 });
 
 /* ── TYPEWRITER EFFECT ── */
-const words = ['Developer.', 'Designer.', 'Creator.'];
-let wordIndex = 0;
-let charIndex = 0;
-let isDeleting = false;
+const words = ['Small Businesses.', 'Tourism Shops.', 'Restaurants.', 'Freelancers.'];
+let wordIndex = 0, charIndex = 0, isDeleting = false;
 const twEl = document.getElementById('tw');
 
 function typeWriter() {
@@ -63,7 +57,7 @@ function typeWriter() {
     twEl.textContent = currentWord.slice(0, charIndex);
     if (charIndex === 0) {
       isDeleting = false;
-      wordIndex = (wordIndex + 1) % words.length;
+      wordIndex  = (wordIndex + 1) % words.length;
       setTimeout(typeWriter, 340);
       return;
     }
@@ -71,13 +65,19 @@ function typeWriter() {
     charIndex++;
     twEl.textContent = currentWord.slice(0, charIndex);
     if (charIndex === currentWord.length) {
-      setTimeout(() => { isDeleting = true; typeWriter(); }, 1500);
+      setTimeout(() => { isDeleting = true; typeWriter(); }, 1800);
       return;
     }
   }
-  setTimeout(typeWriter, isDeleting ? 52 : 108);
+  setTimeout(typeWriter, isDeleting ? 48 : 100);
 }
-typeWriter();
+
+// Respect reduced-motion preference
+if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  typeWriter();
+} else if (twEl) {
+  twEl.textContent = words[0];
+}
 
 /* ── SCROLL REVEAL ── */
 const revealObs = new IntersectionObserver(entries => {
@@ -87,7 +87,7 @@ const revealObs = new IntersectionObserver(entries => {
       revealObs.unobserve(entry.target);
     }
   });
-}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
 
 document.querySelectorAll('.rv, .rvl, .rvr').forEach(el => revealObs.observe(el));
 
@@ -110,24 +110,22 @@ if (skillBarsEl) {
 /* ── LAZY IMAGE LOADING WITH FADE-IN ── */
 const lazyObs = new IntersectionObserver((entries, obs) => {
   entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const img = entry.target;
-      const src = img.dataset.src;
-      if (src) {
-        img.src = src;
-        img.removeAttribute('data-src');
-        img.onload = () => img.classList.add('loaded');
-        // If already cached and complete
-        if (img.complete && img.naturalWidth > 0) img.classList.add('loaded');
-      }
-      obs.unobserve(img);
+    if (!entry.isIntersecting) return;
+    const img = entry.target;
+    const src = img.dataset.src;
+    if (src) {
+      img.src = src;
+      img.removeAttribute('data-src');
+      img.onload = () => img.classList.add('loaded');
+      if (img.complete && img.naturalWidth > 0) img.classList.add('loaded');
     }
+    obs.unobserve(img);
   });
-}, { rootMargin: '200px 0px' }); // start loading 200px before viewport
+}, { rootMargin: '300px 0px' }); // start loading 300px before viewport
 
 document.querySelectorAll('img[data-src]').forEach(img => lazyObs.observe(img));
 
-// Mark eager images as loaded
+// Mark already-loaded eager images
 document.querySelectorAll('img:not([data-src])').forEach(img => {
   if (img.complete && img.naturalWidth > 0) {
     img.classList.add('loaded');
@@ -146,20 +144,33 @@ if (stb) {
 }
 
 /* ── CONTACT FORM FEEDBACK ── */
-const cform = document.getElementById('cform');
+const cform     = document.getElementById('cform');
 const submitBtn = document.getElementById('submit-btn');
 
 if (cform && submitBtn) {
-  cform.addEventListener('submit', () => {
+  cform.addEventListener('submit', e => {
+    // Basic client-side validation before submit
+    const required = cform.querySelectorAll('[required]');
+    let valid = true;
+    required.forEach(field => {
+      if (!field.value.trim()) {
+        field.style.borderColor = '#f87171';
+        valid = false;
+      } else {
+        field.style.borderColor = '';
+      }
+    });
+    if (!valid) { e.preventDefault(); return; }
+
     submitBtn.textContent = '⏳ Sending...';
-    submitBtn.disabled = true;
+    submitBtn.disabled    = true;
     submitBtn.style.opacity = '.7';
   });
 }
 
-/* ── ACTIVE NAV LINK HIGHLIGHT (scroll spy) ── */
+/* ── ACTIVE NAV LINK (scroll spy) ── */
 const sections = document.querySelectorAll('section[id], header[id]');
-const navLinks = document.querySelectorAll('.nav-links a');
+const navLinks  = document.querySelectorAll('.nav-links a');
 
 const spyObs = new IntersectionObserver(entries => {
   entries.forEach(entry => {
@@ -174,15 +185,33 @@ const spyObs = new IntersectionObserver(entries => {
 
 sections.forEach(s => spyObs.observe(s));
 
-/* ── SMOOTH ANCHOR OFFSET for fixed nav ── */
+/* ── SMOOTH ANCHOR with fixed-nav offset ── */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      e.preventDefault();
-      const offset = 72;
-      const top = target.getBoundingClientRect().top + window.scrollY - offset;
-      window.scrollTo({ top, behavior: 'smooth' });
-    }
+    if (!target) return;
+    e.preventDefault();
+    const offset = 72;
+    const top    = target.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({ top, behavior: 'smooth' });
   });
 });
+
+/* ── PERFORMANCE: Report Web Vitals to console (dev aid) ── */
+if ('PerformanceObserver' in window) {
+  try {
+    const lcpObs = new PerformanceObserver(list => {
+      const entries = list.getEntries();
+      const lcp     = entries[entries.length - 1];
+      console.info('[LCP]', Math.round(lcp.startTime), 'ms');
+    });
+    lcpObs.observe({ type: 'largest-contentful-paint', buffered: true });
+
+    const clsObs = new PerformanceObserver(list => {
+      let cls = 0;
+      list.getEntries().forEach(e => { if (!e.hadRecentInput) cls += e.value; });
+      if (cls > 0) console.info('[CLS]', cls.toFixed(4));
+    });
+    clsObs.observe({ type: 'layout-shift', buffered: true });
+  } catch (_) {}
+}
