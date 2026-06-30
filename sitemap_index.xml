@@ -39,11 +39,4 @@
     <priority>0.8</priority>
   </url>
 
-  <!--
-    NOTE: Anchor URLs (#services, #portfolio, #about, #faq, #contact)
-    were intentionally removed. Google does not index URL fragments
-    as separate pages -- they all collapse to the homepage and can
-    trigger "duplicate/alternate page" notices in Search Console.
-  -->
-
 </urlset>
