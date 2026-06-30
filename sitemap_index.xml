@@ -5,45 +5,20 @@
   <!-- Homepage — highest priority -->
   <url>
     <loc>https://www.budgetwebsitedeveloper.com/</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Anchor sections (for Google to deep-link) -->
-  <url>
-    <loc>https://www.budgetwebsitedeveloper.com/#services</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+  <!--
+    NOTE: Anchor URLs (#services, #portfolio, #about, #faq, #contact)
+    were removed. Google does not index URL fragments as separate
+    pages -- they all collapse to the homepage and can trigger
+    "duplicate/alternate page" notices in Search Console.
 
-  <url>
-    <loc>https://www.budgetwebsitedeveloper.com/#portfolio</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.budgetwebsitedeveloper.com/#about</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://www.budgetwebsitedeveloper.com/#faq</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://www.budgetwebsitedeveloper.com/#contact</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
+    As you add real standalone landing pages (e.g.
+    /website-for-dive-shops-philippines/, /website-cost-philippines/),
+    add each one here as its own <url> entry with its own <loc>.
+  -->
 
 </urlset>
